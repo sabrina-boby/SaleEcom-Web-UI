@@ -3,7 +3,47 @@
 // For more information: https://material.angular.io/guide/theming
 @use '@angular/material' as mat;
 // Plus imports for other components in your app.
+/* Add application styles & imports to this file! */
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
 
+/* You can add global styles to this file, and also import other style files */
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.mySwiper {
+  height: 600px;
+  width: 100%;
+}
+
+.mySwiper2 {
+  // defines height and width of thumbs swiper
+  height: 100px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 0;
+  swiper-slide {
+    opacity: 0.6; // this set default opacity to all slides
+  }
+  .swiper-slide-thumb-active {
+    opacity: 1; // this reset the opacity one for the active slide
+  }
+}
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!

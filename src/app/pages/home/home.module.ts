@@ -21,6 +21,7 @@ import { CourseFeaturesComponent } from './course-features/course-features.compo
 import { RegistrationBoxComponent } from '../../shared/components/registration-box/registration-box.component';
 import { SingleCourseComponent } from '../../shared/components/single-course/single-course.component';
 import { OurTeamComponent } from '../about-us/our-team/our-team.component';
+import { ChooseYourOwnTemplateComponent } from './choose-your-own-template/choose-your-own-template.component';
 
 import { BannerComponent } from './banner/banner.component';
 
@@ -56,7 +57,8 @@ import { BuilderProcessComponent } from './builder-process/builder-process.compo
     SuccessStoriesComponent,
     CourseFeaturesComponent,
     SingleCourseComponent,
-    OurTeamComponent
+    OurTeamComponent,
+    ChooseYourOwnTemplateComponent,
   ],
 })
 export class HomeModule {}
