@@ -21,7 +21,11 @@ import { CourseFeaturesComponent } from './course-features/course-features.compo
 import { RegistrationBoxComponent } from '../../shared/components/registration-box/registration-box.component';
 import { SingleCourseComponent } from '../../shared/components/single-course/single-course.component';
 import { OurTeamComponent } from '../about-us/our-team/our-team.component';
+
 import { BannerComponent } from './banner/banner.component';
+
+import { BuilderProcessComponent } from './builder-process/builder-process.component';
+
 
 @NgModule({
   declarations: [
@@ -36,6 +40,9 @@ import { BannerComponent } from './banner/banner.component';
     OurCoursesComponent,
     InspiringFuturesComponent,
     BannerComponent,
+
+    BuilderProcessComponent,
+
   ],
   imports: [
     CommonModule,
