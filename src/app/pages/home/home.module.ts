@@ -23,6 +23,11 @@ import { SingleCourseComponent } from '../../shared/components/single-course/sin
 import { OurTeamComponent } from '../about-us/our-team/our-team.component';
 import { ChooseYourOwnTemplateComponent } from './choose-your-own-template/choose-your-own-template.component';
 
+import { BannerComponent } from './banner/banner.component';
+
+import { BuilderProcessComponent } from './builder-process/builder-process.component';
+
+
 @NgModule({
   declarations: [
     HomeComponent,
@@ -35,6 +40,10 @@ import { ChooseYourOwnTemplateComponent } from './choose-your-own-template/choos
     OurAchievementComponent,
     OurCoursesComponent,
     InspiringFuturesComponent,
+    BannerComponent,
+
+    BuilderProcessComponent,
+
   ],
   imports: [
     CommonModule,
