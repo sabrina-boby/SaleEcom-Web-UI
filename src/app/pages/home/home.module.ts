@@ -27,6 +27,8 @@ import { BannerComponent } from './banner/banner.component';
 
 import { BuilderProcessComponent } from './builder-process/builder-process.component';
 import { MostPowerfulBusinessAutomationSystemComponent } from './most-powerful-business-automation-system/most-powerful-business-automation-system.component';
+import { ToolsSectionComponent } from './tools-section/tools-section.component';
+import { BusinessSectionComponent } from './business-section/business-section.component';
 
 
 @NgModule({
@@ -45,6 +47,8 @@ import { MostPowerfulBusinessAutomationSystemComponent } from './most-powerful-b
 
     BuilderProcessComponent,
       MostPowerfulBusinessAutomationSystemComponent,
+      ToolsSectionComponent,
+      BusinessSectionComponent,
 
   ],
   imports: [
