@@ -21,6 +21,7 @@ import { CourseFeaturesComponent } from './course-features/course-features.compo
 import { RegistrationBoxComponent } from '../../shared/components/registration-box/registration-box.component';
 import { SingleCourseComponent } from '../../shared/components/single-course/single-course.component';
 import { OurTeamComponent } from '../about-us/our-team/our-team.component';
+import { BannerComponent } from './banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { OurTeamComponent } from '../about-us/our-team/our-team.component';
     OurAchievementComponent,
     OurCoursesComponent,
     InspiringFuturesComponent,
+    BannerComponent,
   ],
   imports: [
     CommonModule,
