@@ -1,30 +1,32 @@
+@import "variables";
 .hero-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
   position: relative;
 }
 
 .content {
-  // background: red;
   text-align: center;
   z-index: 10;
 
   h1 {
-    font-size: 2.5rem;
+    font-family: $font-en-primary;
+    font-weight: 900;
+    font-size: 80px;
     color: #333;
     margin-bottom: 0.5rem;
   }
 
   p {
-    font-size: 1.2rem;
+    font-size: 55px;
     color: #666;
-    margin-bottom: 2rem;
+    font-weight: 300;
   }
 
   .start-btn {
-    padding: 0.75rem 1.5rem;
+    padding: 20px 40px;
     font-size: 1rem;
     color: #fff;
     background-color: #333;
@@ -32,19 +34,39 @@
     border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-
+    margin: 60px 0;
     &:hover {
       background-color: #555;
     }
   }
-
-  .performance-text {
-    margin-top: 1rem;
-    font-size: 1rem;
-    color: #666;
-
+  .bip {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    .blinking-green {
+      animation: 1.5s blink-green ease infinite;
+      width: 12px;
+      height: 12px;
+      border-radius: 100%;
+    }
+    @-webkit-keyframes blink-green {
+      from,
+      to {
+        opacity: 0;
+        background-color: #00c956;
+      }
+      50% {
+        opacity: 1;
+      }
+    }
+    p {
+      font-family: $font-en-primary;
+      font-size: 20px;
+      font-weight: bold;
+    }
     .highlight {
-      color: #00f;
+      color: blue;
     }
   }
 }
@@ -59,4 +81,24 @@
   z-index: 5;
   background: url("/asset/Main_Banner.png") no-repeat center center;
   background-size: cover;
+}
+
+@media only screen and (max-width: 599px) {
+  .content {
+    h1 {
+      font-size: 35px;
+    }
+    p {
+      font-size: 20px;
+      font-weight: 500;
+    }
+    .start-btn {
+      margin: 40px 0;
+    }
+    .bip {
+      p{
+        font-size: 15px;
+      }
+    }
+  }
 }

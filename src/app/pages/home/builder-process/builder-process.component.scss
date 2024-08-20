@@ -1,18 +1,87 @@
+@import "variables";
+
 .process-container {
     text-align: center;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   h2 {
-    font-size: 24px;
+    font-size: $font-title;
     margin-bottom: 30px;
     color: #333;
   }
   
   .steps {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    position: relative;
+    width: 700px;
+    height: 170px;
+
+    
+
+    .dot-arrow1{
+      position: absolute;
+      left: 9%;
+      top: 5%;
+      width: 145px;
+      height: 100%;
+      img{
+        width: 100%;
+      }
+    }
+
+    .dot-arrow2{
+      position: absolute;
+      left: 39%;
+      top: 53%;
+      width: 140px;
+      height: 100%;
+      img{
+        width: 100%;
+      }
+    }
+
+    .dot-arrow3{
+      position: absolute;
+      top: 50%;
+      right: 12%;
+      width: 128px;
+      height: 100%;
+      img{
+        width: 100%;
+      }
+
+    }
+
+    .step01{
+      position: absolute;
+      left: 0;
+      bottom: 0px;
+
+    }
+
+    .step02{
+      position: absolute;
+      left: 27%;
+      top: 0px;
+    }
+
+    .step03{
+      position: absolute;
+      right: 28%;
+      bottom: 0px;
+    }
+
+    .step04{
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
   }
   
   .step {
@@ -21,7 +90,11 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+
+    
   }
+
+
   
   .border {
     width: 100px;
@@ -43,6 +116,7 @@
     align-items: center;
     position: absolute;
     top: 7px;
+    box-shadow: inset 0px 0 10px rgb(111, 89, 89,0.3);
   
     img {
       height: 60px;
@@ -55,19 +129,19 @@
   }
   
   .border-colour1 {
-    border: 2px dashed #f8b500;
+    border: 2px dashed #fcc76b;
   }
   
   .bg-colour1 {
-    background: #f8b500;
+    background: #fcc76b;
   }
   
   .border-colour2 {
-    border: 2px dashed #338a3e;
+    border: 2px dashed #1db495;
   }
   
   .bg-colour2 {
-    background: #338a3e;
+    background: #1db495;
   }
   
   .border-colour3 {
@@ -79,11 +153,15 @@
   }
   
   .border-colour4 {
-    border: 2px dashed #002e8f;
+    border: 2px dashed #013777;
   }
   
   .bg-colour4 {
-    background: #002e8f;
+    background: #013777;
+    p{
+      font-size: 14px;
+      color: rgb(197, 195, 195);
+    }
   }
   
   .arrow {
@@ -111,5 +189,171 @@
   
   .font-colour4 {
     color: #002e8f;
+  }
+
+
+  @media only screen and (max-width: 799px) {
+
+    .border {
+      width: 80px;
+      height: 80px;
+    }
+
+    .bg-colour4 {
+      p{
+        font-size: 10px;
+      }
+    }
+
+    .start-build {
+      width: 65px;
+      height: 65px;
+      
+    
+      img {
+        height: 40px;
+        width: 40px;
+      }
+    }
+
+    .steps {
+      
+      width: 500px;
+      height: 135px;
+  
+      
+  
+      .dot-arrow1{
+        left: 9%;
+        top: 3%;
+        width: 100px;
+        
+      }
+  
+      .dot-arrow2{
+        left: 40%;
+        top: 53%;
+        width: 100px;
+        
+      }
+  
+      .dot-arrow3{
+        top: 50%;
+        right: 14%;
+        width: 70px;
+        
+  
+      }
+  
+      .step01{
+        left: 0;
+        bottom: 0px;
+  
+      }
+  
+      .step02{
+        left: 24%;
+        top: 0px;
+      }
+  
+      .step03{
+        right: 24%;
+        bottom: 0px;
+      }
+  
+      .step04{
+        right: 0;
+        top: 0;
+      }
+    }
+
+  }
+
+
+  @media only screen and (max-width: 530px) {
+
+    h2 {
+      font-size: $font-title-sm;
+    }
+
+    .border {
+      width: 60px;
+      height: 60px;
+    }
+
+    .bg-colour4 {
+      p{
+        font-size: 8px;
+        margin-top: 5px;
+      }
+    }
+
+    .start-build {
+      width: 45px;
+      height: 45px;
+      
+    
+      img {
+        height: 35px;
+        width: 35px;
+      }
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 12px;
+    }
+
+    .steps {
+      
+      width: 330px;
+      height: 125px;
+  
+      
+  
+      .dot-arrow1{
+        left: 8%;
+        top: 6%;
+        width: 60px;
+        
+      }
+  
+      .dot-arrow2{
+        left: 38%;
+        top: 44%;
+        width: 60px;
+        
+      }
+  
+      .dot-arrow3{
+        top: 46%;
+        right: 13%;
+        width: 50px;
+        
+  
+      }
+  
+      .step01{
+        left: 0;
+        bottom: 0px;
+  
+      }
+  
+      .step02{
+        left: 20%;
+        top: 0px;
+      }
+  
+      .step03{
+        right: 24%;
+        bottom: 0px;
+      }
+  
+      .step04{
+        right: 0;
+        top: 0;
+      }
+    }
+
   }
   
