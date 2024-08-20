@@ -1,131 +1,62 @@
-@import "variables";
 
-.container h3{
-    font-size: calc($font-title)+40px;
-    font-family: 'Satoshi-Bold';
-    font-weight: 900;
-  font-style: normal;
-  color: #4d4d4f;
-  margin-bottom: 30%;
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.content {
+  text-align: center;
+  z-index: 10;
+
+  h1 {
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 0.5rem;
+  }
+
+  p {
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 2rem;
+  }
+
+  .start-btn {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      color: #fff;
+      background-color: #333;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+          background-color: #555;
+      }
+  }
+
+  .performance-text {
+      margin-top: 1rem;
+      font-size: 1rem;
+      color: #666;
+
+      .highlight {
+          color: #00f;
+      }
+  }
+}
+
+.background-graphics {
   position: absolute;
 text-align: center;
-
-
-}
-.container h5{
-    font-size: calc($font-sub-title)+25px;
-    font-family: 'Satoshi-Light';
-    font-weight: 300;
-  font-style: normal;
-  margin-bottom: 20%;
-  color: #4d4d4f;
-  position: absolute;
-
-    text-align: center;
-
-}
-
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-
-// .dot {
-//     height: 15px;
-//     width: 15px;
-//     background-color: #00c956;
-//     border-radius: 50%;
-//     margin-top: 7px;
-//     // display: flex;
-//     // position: absolute;
-//   }
-.blinking-green {
-animation: 1.5s blink-green ease infinite;
-width: 15px;
-height: 15px;
-border-radius: 100%;
-margin-top: 7px;
-}
-
-
-@-webkit-keyframes blink-green {
-  from, to {
-    opacity: 0;
-    background-color: #00c956;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-  .last-msg{
-    display: flex;
-    position: absolute;
-    top: 75%;
-    gap: 10px;
-  }
-  .last-msg p{
-    font-size: calc($font-readable)+5px;
-   
-  }
-  .button {
-    background-color: #4d4d4f;
-    border: none;
-    color: #ffffff;
-    padding: 18px 45px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 26px;
-    margin: 14px 2px;
-    position: absolute;
-    top: 51%;
-    cursor: pointer;
-    border-radius: 50px;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-  }
-  .button2:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-  }
-
-@media only screen and (max-width: 599px){
-    .container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-    }
-    .container h3{
-        top:5%;
-        font-size: 35px;
-    }
-    .container h5{
-        top:50%;
-        font-size: 22px;
-    }
-    .button{
-        top: 65%;
-        font-size: 8px;
-        padding: 5px 8px;
-    }
-    .blinking-green  {
-        height: 5px;
-        width: 5px;
-        margin-top: 30px;
-    }
-
-    .last-msg p{
-        margin-top: 25px;
-        font-size: 10px;
-
-    
-
-    }
-    .last-msg{
-        gap: 5px;
-    }
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  background: url('/asset/Main_Banner.png') no-repeat center center;
+  background-size: cover;
 }

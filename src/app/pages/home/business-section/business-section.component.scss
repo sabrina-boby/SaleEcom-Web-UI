@@ -4,13 +4,14 @@
 $text-color: #4d4d4f;
 $border-color: #c4c4c5;
 $button-color: #2A2A2A;
-.container{
+$user-bg: #eff1f1;
+.container-business-section {
   position: relative;
 }
 .colorful-bg{
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   z-index: -1;
   top: 0;
   left: 0;
@@ -25,7 +26,7 @@ $button-color: #2A2A2A;
   z-index: 2;
 
   h2{
-    font-size: $font-title;
+    font-size: calc($font-title + 10px);
     font-weight: bold;
     color: $text-color;
     font-family: 'Satoshi', sans-serif;
@@ -42,14 +43,17 @@ $button-color: #2A2A2A;
 }
 
 .business-left{
+  display: grid;
+  grid-template-columns: 1fr;
   img{
-    max-height: 350px;
+    max-height: 450px;
     max-width: 450px;
   }
 }
 
 .business-right{
-
+  display: grid;
+  grid-template-columns: 1fr;
   .business-text{
     display: flex;
     flex-direction: row;
@@ -58,12 +62,12 @@ $button-color: #2A2A2A;
     margin-bottom: 10px;
     margin-left: 30px;
     padding: 0 20px;
-    svg{
+    .svg-business{
       height: 30px;
       width: 30px;
     }
     p{
-      font-size: calc($font-title-desc);
+      font-size: calc($font-title-desc + 6px);
       font-weight: 400;
       color: $text-color;
     }
@@ -87,29 +91,115 @@ $button-color: #2A2A2A;
 }
 
 .user-section{
+  border: 2px solid $border-color;
   display: flex;
   flex-direction: row;
   gap: 55px;
   align-items: center;
   justify-content: center;
   position: relative;
-  margin-top: 60px;
-  height: 150px;
-
+  margin-top: 25px;
+  height: 245px;
+  background-color: $user-bg;
+  z-index: -1;
   .user-svg-left{
     position: absolute;
     top: 0;
     left: 0;
-    width: 160px;
-    height: 350px;
+    width: 259px;
+    height: 450px;
   }
   .user-svg-right{
     position: absolute;
     top: 0;
     right: 0;
-    width: 160px;
-    height: 350px;
+    width: 259px;
+    height: 450px;
   }
 
+  .users{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3{
+      font-size: calc($font-sub-title + 10px);
+      font-weight: 600;
+      color: $text-color;
+    }
+    p{
+      font-size: $font-sub-title-sm;
+      font-weight: 400;
+      color: $text-color;
+    }
+  }
+
+}
+
+
+
+@media only screen and (max-width: 599px) {
+  .colorful-bg{
+    display: none;
+  }
+  .business-heading{
+    h2{
+      font-size: calc($font-title - 8px);
+    }
+  }
+  .business-section {
+    flex-wrap: wrap;
+    .business-left{
+      img{
+        align-items: center;
+        justify-content: center;
+        max-height: 350px;
+        max-width: 350px;
+      }
+    }
+
+    .business-text{
+      p{
+        font-size: $font-readable-sm;
+      }
+    }
+
+    .button-business{
+      width: 85%;
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: calc($font-readable + 1px);
+    }
+
+  }
+
+  .user-section{
+    height: 292px;
+    flex-wrap: wrap;
+    gap: 1px;
+    .user-svg-left{
+      width: 310px;
+      z-index: -1;
+    }
+
+    .user-svg-right{
+      width: 310px;
+      z-index: -1;
+    }
+
+    .users{
+      width: 100%;
+      h3{
+        font-size: calc($font-readable + 8px);
+      }
+      p{
+        font-size: $font-readable-sm;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1080px) {
 
 }

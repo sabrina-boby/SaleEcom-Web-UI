@@ -33,6 +33,29 @@ header {
     gap: 30px;
     justify-content: center;
 
+    p{
+      display: flex;
+      position: relative;
+
+      svg{
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        right: -15px;
+        top: -6px;
+      }
+    }
+.search{
+  position: relative;
+
+  svg{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+}
     input{
       height: 30px;
       border-radius: 5px;
@@ -41,7 +64,7 @@ header {
     }
     ul {
       display: flex;
-      gap: 20px;
+      gap: 30px;
       li {
         list-style: none;
       }
@@ -51,7 +74,13 @@ header {
         font-weight: 500;
       }
       a:hover {
-        color: rgb(99, 29, 230);
+        // color: rgb(99, 29, 230);
+
+        svg{
+          height: 25px;
+          width: 25px;transition: 0.3s ease-out;
+        }
+        
       }
     }
   }
@@ -60,8 +89,8 @@ header {
     button {
       border-radius: 8px;
       border: none;
-      height: 40px;
-      width: 150px;
+      height: 30px;
+      width: 110px;
       background: $color-black;
       color: $color-white;
       cursor: pointer;
@@ -105,7 +134,7 @@ header {
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     .container {
       padding:0 20px 0 20px;
     }
@@ -120,32 +149,40 @@ header {
       height: 0;
       overflow: hidden;
       transition: height 0.3s ease-in-out;
-      z-index: 100;
+      z-index: 1;
       ul{
         flex-direction: column;
         gap: 0px;
+        width: 100%;
+        // margin-top: 30px;
+        // overflow: scroll;
         li{
           padding: 20px 30px;
         }
         li:hover{
           transition: 0.7s;
-          background: $color-purpel;
+          // background: $color-purpel;
           a {
             color: $color-white;
           }
         }
       }
       &.active {
-        height: calc(55vh - #{$header-height});
+        height: calc(62vh - #{$header-height});
       }
     }
 
+
     .button {
+      display: none;
+    }
+    .search{
       display: none;
     }
 
     .hamburger {
       display: flex;
+
     }
   }
 }

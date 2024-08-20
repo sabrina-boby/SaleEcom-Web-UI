@@ -1,66 +1,93 @@
-.main-container{
+.main-container {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 0;
 }
 
-.heading{
+.heading {
     padding: 50px 30px 10px;
-    h1{
+    position: relative;
+
+    h1 {
         text-align: center;
         padding: 0 30px;
-        font-size: 1.9rem;
+        font-size: 1.8rem;
     }
-    img{
+
+    img {
         position: absolute;
-        width: 900px;
-        left: 600px;
+        width: 60%;
+        left: 25%;
     }
 }
 
-.image-banner{
-
-    width: 1400px;
-    padding-top: 50px;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    img{
+.image-banner {
+    width: 90%;
+    padding: 50px 0 0 0;
+    transform: translateY(7px);
+    img {
         width: 100%;
     }
 }
 
-.itemsOfProduct{
-    // position: absolute;
-    // top: 500px;
-    width: 1500px;
-    height: 500px;
-    // border: 1px solid red;
+
+.itemsOfProduct-container {
+    width: 100%;
+    padding: 40px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-    box-shadow: 20px 20px 50px 10px rgb(172, 169, 170) inset;
-
-}
-
-.itemsOfProduct{
+    box-shadow: -30px 10px 50px 10px rgb(172, 169, 170) inset;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .image{
+    margin: 20px;
+    .image {
         width: 150px;
         height: 150px;
-        // border: 1px solid red;
+        margin-bottom: 20px;
         border-radius: 50%;
-        box-shadow: 20px 20px 50px 10px rgb(172, 169, 170) inset;
+        box-shadow: 20px 20px 50px 10px rgb(172, 169, 170) inset; 
+    }
+    
+}
+
+@media (max-width:800px) {
+    .itemsOfProduct-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .card {
+        padding: 10px;
     }
 }
 
+@media (max-width:650px) {
+    .card {
+        .image {
+            width: 100px;
+            height: 100px;
+        }
+        p{
+            width: 100px;
+            white-space: nowrap; 
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}
+
+@media (max-width:450px) {
+    .itemsOfProduct-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
