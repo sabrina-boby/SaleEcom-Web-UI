@@ -33,15 +33,33 @@ text-align: center;
 }
 
 
-.dot {
-    height: 15px;
-    width: 15px;
+// .dot {
+//     height: 15px;
+//     width: 15px;
+//     background-color: #00c956;
+//     border-radius: 50%;
+//     margin-top: 7px;
+//     // display: flex;
+//     // position: absolute;
+//   }
+.blinking-green {
+animation: 1.5s blink-green ease infinite;
+width: 15px;
+height: 15px;
+border-radius: 100%;
+margin-top: 7px;
+}
+
+
+@-webkit-keyframes blink-green {
+  from, to {
+    opacity: 0;
     background-color: #00c956;
-    border-radius: 50%;
-    margin-top: 7px;
-    // display: flex;
-    // position: absolute;
   }
+  50% {
+    opacity: 1;
+  }
+}
   .last-msg{
     display: flex;
     position: absolute;
@@ -93,7 +111,7 @@ text-align: center;
         font-size: 8px;
         padding: 5px 8px;
     }
-    .dot {
+    .blinking-green  {
         height: 5px;
         width: 5px;
         margin-top: 30px;
