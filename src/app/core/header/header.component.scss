@@ -150,6 +150,9 @@ header {
       overflow: hidden;
       transition: height 0.3s ease-in-out;
       z-index: 100;
+      svg{
+        display: none;
+      }
       ul{
         flex-direction: column;
         gap: 0px;
