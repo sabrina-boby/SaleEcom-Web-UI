@@ -20,11 +20,8 @@ import { InspiringFuturesComponent } from './inspiring-futures/inspiring-futures
 import { CourseFeaturesComponent } from './course-features/course-features.component';
 import { RegistrationBoxComponent } from '../../shared/components/registration-box/registration-box.component';
 import { SingleCourseComponent } from '../../shared/components/single-course/single-course.component';
-import { OurTeamComponent } from '../about-us/our-team/our-team.component';
 import { ChooseYourOwnTemplateComponent } from './choose-your-own-template/choose-your-own-template.component';
-
 import { BannerComponent } from './banner/banner.component';
-
 import { BuilderProcessComponent } from './builder-process/builder-process.component';
 import { MostPowerfulBusinessAutomationSystemComponent } from './most-powerful-business-automation-system/most-powerful-business-automation-system.component';
 import { ToolsSectionComponent } from './tools-section/tools-section.component';
@@ -63,7 +60,6 @@ import { BusinessSectionComponent } from './business-section/business-section.co
     SuccessStoriesComponent,
     CourseFeaturesComponent,
     SingleCourseComponent,
-    OurTeamComponent,
     ChooseYourOwnTemplateComponent,
   ],
 })
