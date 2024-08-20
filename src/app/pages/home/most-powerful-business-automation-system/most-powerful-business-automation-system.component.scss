@@ -72,6 +72,11 @@
 }
 
 @media (max-width:800px) {
+    .heading{
+        h1{
+            font-size: $font-sub-title;
+        }
+    }
     .itemsOfProduct-container {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -81,6 +86,11 @@
 }
 
 @media (max-width:650px) {
+    .heading{
+        h1{
+            font-size: $font-readable;
+        }
+    }
     .card {
         .image {
             width: 100px;
