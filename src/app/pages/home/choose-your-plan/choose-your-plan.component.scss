@@ -3,15 +3,39 @@
 .pricing-container {
     text-align: center;
     margin-bottom: 70px;
-    margin-top: 30px;
+    // margin-top: 30px;
+    // border: 1px solid red;
+    background-image: url(/asset/bg.svg);
+    height: 100vh;
+    position: relative;
+}
+.round{
+    position: absolute;
+
+    color: black;
+    z-index: 100000;
+    // background-color: red;
 }
 
-h2 {
-    // border: 1px solid red;
+.section-header h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #333;
+    position: relative;
     margin-bottom: 60px;
-    font-size: 32px;
-    color: rgb(76, 71, 71);
 }
+
+.section-header h2::after {
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    left: 50%;
+    transform: translateX(70%);
+    bottom: 0;
+}
+
 
 .pricing-plans {
     display: flex;
@@ -44,12 +68,20 @@ h2 {
     }
 
 }
+.check-svg{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 30px;
+    width: 30px;
+
+}
 
 .content {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    justify-content: center;
+    text-align: center;
     margin-top: 20px;
 
     // border: 1px solid red;
@@ -59,7 +91,7 @@ h2 {
 .right-text {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 18px;
 
     // border: 1px solid red;
     p {
@@ -107,8 +139,17 @@ h2 {
 .plan-card.unlimited button {
     color: black;
     font-weight: 500;
-    background: rgb(100,219,176);
-background: linear-gradient(90deg, rgba(100,219,176,1) 21%, rgba(255,205,89,1) 98%);
+    background: rgb(100, 219, 176);
+    background: linear-gradient(90deg, rgba(100, 219, 176, 1) 21%, rgba(255, 205, 89, 1) 98%);
+}
+.plan-card.unlimited h4 {
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(to right, #60c69f, #c2b378, #f79552);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
 .price {
@@ -129,10 +170,19 @@ background: linear-gradient(90deg, rgba(100,219,176,1) 21%, rgba(255,205,89,1) 9
 
 
 .popular {
-    text-align: right;
-    padding: 0px 9px;
-    // width: 70%;
-    // border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    background: linear-gradient(to right, #c2b378, #f79552);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    border: 1px solid orange;
+    height: 20px;
+    width: 110px;
+    border-radius: 20px;
 }
 
 .plan-card {
@@ -157,11 +207,11 @@ background: linear-gradient(90deg, rgba(100,219,176,1) 21%, rgba(255,205,89,1) 9
 .star-svg {
     height: 80px;
     width: 80px;
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #FF9800;
+    // border-radius: 100%;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // border: 1px solid #FF9800;
 }
 
 
