@@ -16,10 +16,17 @@ export class SingleFaqComponent implements OnChanges {
 
   isOpen: boolean = false;
 
+  ngOnInit(){
+    console.log("data,", this.data);
+    
+  }
+
   ngOnChanges(changes: SimpleChanges) {
     if (!this.activeId || (this.activeId && this.activeId !== this.data._id)) {
       this.isOpen = false;
     }
+
+    
   }
 
   onToggle() {

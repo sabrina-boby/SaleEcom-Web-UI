@@ -36,6 +36,8 @@ export class FaqComponent implements OnInit, OnDestroy {
       .subscribe({
         next: res => {
           this.faqs = res.data;
+          console.log("this.faqs", this.faqs);
+          
         },
         error: err => {
           console.log(err)

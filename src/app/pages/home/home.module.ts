@@ -26,7 +26,8 @@ import { BuilderProcessComponent } from './builder-process/builder-process.compo
 import { MostPowerfulBusinessAutomationSystemComponent } from './most-powerful-business-automation-system/most-powerful-business-automation-system.component';
 import { ToolsSectionComponent } from './tools-section/tools-section.component';
 import { BusinessSectionComponent } from './business-section/business-section.component';
-
+import { SuccessStoryComponent } from './success-story/success-story.component';
+import { SingleFaqComponent } from '../../shared/components/single-faq/single-faq.component';
 
 @NgModule({
   declarations: [
@@ -43,10 +44,10 @@ import { BusinessSectionComponent } from './business-section/business-section.co
     BannerComponent,
 
     BuilderProcessComponent,
-      MostPowerfulBusinessAutomationSystemComponent,
-      ToolsSectionComponent,
-      BusinessSectionComponent,
-
+    MostPowerfulBusinessAutomationSystemComponent,
+    ToolsSectionComponent,
+    BusinessSectionComponent,
+    SuccessStoryComponent,
   ],
   imports: [
     CommonModule,
@@ -61,6 +62,7 @@ import { BusinessSectionComponent } from './business-section/business-section.co
     CourseFeaturesComponent,
     SingleCourseComponent,
     ChooseYourOwnTemplateComponent,
+    SingleFaqComponent
   ],
 })
 export class HomeModule {}
