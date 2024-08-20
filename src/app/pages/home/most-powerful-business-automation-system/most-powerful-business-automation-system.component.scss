@@ -30,11 +30,13 @@
 .image-banner {
     width: 90%;
     padding: 50px 0 0 0;
-    transform: translateY(7px);
-    img {
+    transform: translateY(5px);
+    img{
         width: 100%;
-    }
+    } 
+        
 }
+
 
 
 .itemsOfProduct-container {
@@ -94,7 +96,17 @@
 }
 
 @media (max-width:450px) {
+
+    .image-banner{
+        width: 80%;
+    }
+    .heading{
+        h1{
+            font-size: $font-readable;
+        }
+    }
     .itemsOfProduct-container {
         grid-template-columns: 1fr 1fr;
     }
+    
 }
