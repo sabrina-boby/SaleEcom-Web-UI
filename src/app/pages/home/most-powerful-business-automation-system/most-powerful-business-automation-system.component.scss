@@ -100,6 +100,11 @@
     .image-banner{
         width: 80%;
     }
+    .heading{
+        h1{
+            font-size: $font-readable;
+        }
+    }
     .itemsOfProduct-container {
         grid-template-columns: 1fr 1fr;
     }
