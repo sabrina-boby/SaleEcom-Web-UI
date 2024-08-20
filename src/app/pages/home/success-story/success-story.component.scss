@@ -1,0 +1,21 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    position: relative;
+    padding: 20px;
+    h1{
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    .bgline{
+        position: absolute;
+        width: 200px;
+        border: 1px solid black;
+        left: 75%;
+    }
+}
