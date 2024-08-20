@@ -1,3 +1,4 @@
+@import "variables";
 section{
     background-color: #f7f7f7;
 }
@@ -15,6 +16,7 @@ section{
     h1{
         color: #4d4d4f;
         font-size: 2rem;
+        font-family: $font-en-secondary;
     }
     .bgline{
         width: 180px;
