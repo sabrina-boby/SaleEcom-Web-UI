@@ -1,3 +1,4 @@
+@import "variables";
 section{
     background-color: #f7f7f7;
 }
@@ -11,10 +12,11 @@ section{
 }
 
 .heading{
-    padding-bottom: 60px;
+    padding: 60px;
     h1{
         color: #4d4d4f;
         font-size: 2rem;
+        font-family: $font-en-secondary;
     }
     .bgline{
         width: 180px;
