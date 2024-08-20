@@ -29,6 +29,7 @@ import { BuilderProcessComponent } from './builder-process/builder-process.compo
 import { MostPowerfulBusinessAutomationSystemComponent } from './most-powerful-business-automation-system/most-powerful-business-automation-system.component';
 import { ToolsSectionComponent } from './tools-section/tools-section.component';
 import { BusinessSectionComponent } from './business-section/business-section.component';
+import { ChooseYourPlanComponent } from './choose-your-plan/choose-your-plan.component';
 
 
 @NgModule({
@@ -49,6 +50,7 @@ import { BusinessSectionComponent } from './business-section/business-section.co
       MostPowerfulBusinessAutomationSystemComponent,
       ToolsSectionComponent,
       BusinessSectionComponent,
+      ChooseYourPlanComponent,
 
   ],
   imports: [
