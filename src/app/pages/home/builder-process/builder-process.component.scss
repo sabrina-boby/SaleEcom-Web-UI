@@ -16,64 +16,100 @@
   }
   
   .step {
+    // background: red;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
   }
   
-  .icon {
+  .border {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px dashed #ccc;
+    
+    transition: transform 1s ease; /* Smooth rotation transition */
   }
   
   .start-build {
-    background: radial-gradient(circle, #fceabb, #f8b500);
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 7px;
+  
+    img {
+      height: 60px;
+      width: 60px;
+    }
   }
   
-  .payment-process {
-    background: radial-gradient(circle, #b6f492, #338a3e);
+  .step:hover .border {
+    transform: rotate(60deg); /* Rotates the border 180 degrees */
   }
   
-  .select-team {
-    background: radial-gradient(circle, #f88f8f, #ff3e3e);
+  .border-colour1 {
+    border: 2px dashed #f8b500;
   }
   
-  .set-name {
-    background: radial-gradient(circle, #7893ff, #002e8f);
+  .bg-colour1 {
+    background: #f8b500;
+  }
+  
+  .border-colour2 {
+    border: 2px dashed #338a3e;
+  }
+  
+  .bg-colour2 {
+    background: #338a3e;
+  }
+  
+  .border-colour3 {
+    border: 2px dashed #ff3e3e;
+  }
+  
+  .bg-colour3 {
+    background: #ff3e3e;
+  }
+  
+  .border-colour4 {
+    border: 2px dashed #002e8f;
+  }
+  
+  .bg-colour4 {
+    background: #002e8f;
   }
   
   .arrow {
     width: 50px;
     height: 50px;
-    // background: url('arrow.png') no-repeat center center;
     background-size: contain;
   }
   
   p {
     margin-top: 10px;
     font-weight: 600;
-    color: #333;
   }
   
-  .start-build p {
+  .font-colour1 {
     color: #f8b500;
   }
   
-  .payment-process p {
+  .font-colour2 {
     color: #338a3e;
   }
   
-  .select-team p {
+  .font-colour3 {
     color: #ff3e3e;
   }
   
-  .set-name p {
+  .font-colour4 {
     color: #002e8f;
   }
   
