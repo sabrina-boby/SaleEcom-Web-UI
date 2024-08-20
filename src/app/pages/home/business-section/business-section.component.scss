@@ -42,6 +42,9 @@ $button-color: #2A2A2A;
 }
 
 .business-left{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 3;
   img{
     max-height: 350px;
     max-width: 450px;
@@ -49,7 +52,9 @@ $button-color: #2A2A2A;
 }
 
 .business-right{
-
+  display: flex;
+  flex-wrap: wrap;
+  flex: 3;
   .business-text{
     display: flex;
     flex-direction: row;
@@ -111,5 +116,32 @@ $button-color: #2A2A2A;
     height: 350px;
   }
 
+}
+
+
+
+@media only screen and (max-width: 599px) {
+  .colorful-bg{
+    display: none;
+  }
+  .business-section {
+    .business-left{
+      img{
+        max-height: 150px;
+        max-width: 250px;
+      }
+    }
+
+    .business-text{
+      p{
+        font-size: $font-readable-sm;
+      }
+    }
+
+
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1080px) {
 
 }
