@@ -109,14 +109,11 @@ header {
       }
     }
 
-    // button:hover {
-    //   font-weight: 600;
-    //   // box-shadow: 0 15px 15px 0;
-    //   border: 1px solid black;
-    //   transition-duration: 0.4s;
-    //   background: $color-white;
-    //   color: $color-black;
-    // }
+    button:hover {
+      // box-shadow: 0 15px 15px 0;
+      transition-duration: 0.4s;
+      background-color: #4d4a4a;
+    }
   }
 
   .hamburger {
