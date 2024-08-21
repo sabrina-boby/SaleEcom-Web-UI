@@ -15,14 +15,15 @@ section{
     padding: 60px;
     h1{
         color: #4d4d4f;
-        font-size: $font-title;
+        font-size: calc($font-title)+10px;
         font-family: $font-en-primary;
     }
     .bgline{
-        width: 160px;
-        border: 1px solid black;
+        margin-top: 5px;
+        width: 200px;
+        border: 1px solid #4d4d4f;
         position: absolute;
-        left: 54%;
+        left: 56%;
     }
 }
 
@@ -31,7 +32,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 60px;
 }
 
 
@@ -39,6 +40,7 @@ section{
     img{
         width: 300px;
         height: 500px;
+        border: 2px solid #4d4d4f;
     }
 }
 
@@ -50,15 +52,17 @@ section{
 
 @media (max-width:500px) {
     .heading{
+        text-align: center;
         padding-bottom: 60px;
         h1{
-            font-size: 1.4rem;
+            font-size: $font-sub-title;
+            white-space: nowrap;
         }
         .bgline{
-            width: 180px;
-            border: 1px solid black;
+            width: 110px;
+            border: 1px solid #4d4d4f;
             position: absolute;
-            left: 45%;
+            left: 64%;
         }
     }
 }
