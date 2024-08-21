@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrl: './business-section.component.scss'
 })
 export class BusinessSectionComponent {
+   count01 : number = 0;
+
+
+  // counterstop:any=setInterval(()=>{
+  //   this.count01++;
+
+  //   if(this.count01 === 680){
+  //     clearInterval(this.counterstop);
+  //   }
+  // },50)
 
 }
