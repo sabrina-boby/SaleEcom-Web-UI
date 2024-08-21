@@ -6,11 +6,12 @@
 .bg{
     position: relative;
     img{
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    // top: 0;
+    // left: 0;
+    // bottom: 0;
+    // right: 0;
     // max-height: 1000px;
+    width: 100%;
     position: absolute;
     background-repeat: no-repeat;
     background-position: center;
@@ -230,6 +231,7 @@
     }
     .section-header h2 {
              left: 10px;
+             font-size: $font-sub-title;
             //  width: 100%;
             //  margin-bottom: 60px;
     }

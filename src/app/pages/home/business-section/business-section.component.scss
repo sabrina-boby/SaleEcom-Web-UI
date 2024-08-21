@@ -36,7 +36,7 @@ $user-bg: #eff1f1;
     width: 200px;
     border: 1px solid #4d4d4f;
     position: absolute;
-    left: 56%;
+    left: 55%;
   }
 }
 
@@ -269,8 +269,7 @@ $user-bg: #eff1f1;
       font-size: calc($font-title - 8px);
     }
     .bgline{
-      margin-top: 40px;
-      left: 41% !important;
+      display: none;
     }
   }
   .business-section {
