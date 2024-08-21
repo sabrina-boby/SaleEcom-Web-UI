@@ -17,6 +17,13 @@ $button-color: #2A2A2A;
     font-family: 'Satoshi', sans-serif;
     margin-top: 50px;
   }
+  .bgline{
+    margin-top: 130px;
+    width: 200px;
+    border: 1px solid #4d4d4f;
+    position: absolute;
+    left: 76%;
+  }
 }
 
 .tool-section{
@@ -116,9 +123,10 @@ $button-color: #2A2A2A;
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1080px) {
-  //.tech-stack{
-  //  grid-template-columns: 1fr 1fr;
-  //}
+  .bgline{
+    margin-top: 5px;
+    left: 61% !important;
+  }
   .tool-section-header{
     h2{
       font-size: $font-title-sm;
@@ -132,9 +140,9 @@ $button-color: #2A2A2A;
 
 }
 @media only screen and (max-width: 599px) {
-  //.tech-stack{
-  //  grid-template-columns: 1fr;
-  //}
+  .bgline{
+    left: 28% !important;
+  }
   .tool-section{
     padding-top: 0;
     flex-direction: column-reverse;
