@@ -21,7 +21,7 @@ $border-color: #e1e1e2;
 }
 .container-header-content-wraper {
   position: relative;
-  width: 75%;
+  width: 70%;
   display: flex;
   justify-content: space-between;
   align-items: self-start;
@@ -98,6 +98,7 @@ $border-color: #e1e1e2;
 .input-wrapper input,
 .input-wrapper textarea {
   border: 1px solid #f2f0f0;
+  background-color: white;
   width: 100%;
   padding: 17px 15px;
   font-size: 16px;
@@ -171,11 +172,12 @@ $border-color: #e1e1e2;
   padding: 10px 20px;
   background-color: transparent;
   border: 2px solid #0000ff;
-  color: #000;
+  color: blue;
   width: 100%;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
+  font-weight: 700;
   transition: padding 0.3s;
 }
 
@@ -262,3 +264,7 @@ $border-color: #e1e1e2;
 .checkbox:focus {
   border-color: #0056b3;
 }
+
+
+
+

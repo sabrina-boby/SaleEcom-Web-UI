@@ -16,17 +16,18 @@
 
 .heading {
   padding: 60px;
+  position: relative;
   h2 {
     color: #4d4d4f;
-    font-size: $font-title;
+    font-size: calc($font-title)+10px;
     font-family: $font-en-primary;
     margin-bottom: 6px;
   }
   .bgline {
-    width: 160px;
-    border: 1px solid black;
+    width: 180px;
+    border: 1px solid #4d4d4f;
     position: absolute;
-    left: 54%;
+    left: 63%;
   }
 }
 
@@ -203,8 +204,11 @@ p {
 
   .heading {
     padding: 20px;
+      .bgline{
+        display: none;
+      }
+    }
    
-  }
   .border {
     width: 90px;
     height: 90px;
