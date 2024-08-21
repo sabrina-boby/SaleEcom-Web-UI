@@ -1,19 +1,29 @@
 @import 'variables';
-.container{
-    height: 120vh;
-}
-
-.bg{
+// .container{
+//     position: relative;
+// }
+.choose-plan{
     position: relative;
+}
+.bg{
+    // position: absolute;
     img{
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    // top: 0;
+    // left: 0;
+    // bottom: 0;
+    // right: 0;
     position: absolute;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    text-align: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+//   background: url("/asset/Main_Banner.png") no-repeat center center;
+  background-size: cover;
     }
 }
 
@@ -28,7 +38,7 @@
     font-size: 50px;
     font-weight: 700;
     color: #333;
-    position: relative;
+    // position: relative;
     position: absolute;
     top: 30px;
     left: 240px;
