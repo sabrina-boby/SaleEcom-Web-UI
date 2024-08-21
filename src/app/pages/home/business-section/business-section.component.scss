@@ -26,7 +26,6 @@ $user-bg: #eff1f1;
   justify-content: center;
   z-index: 2;
   h2{
-    //margin-top: 100px;
     font-size: calc($font-title + 10px);
     font-weight: bold;
     color: $text-color;
@@ -53,8 +52,13 @@ $user-bg: #eff1f1;
 }
 
 .business-right{
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  .all-business-texts{
+    margin-top: 30px;
+    margin-bottom: 70px;
+  }
   .business-text{
     display: flex;
     flex-direction: row;
@@ -64,8 +68,8 @@ $user-bg: #eff1f1;
     margin-left: 30px;
     padding: 0 20px;
     .svg-business{
-      height: 30px;
-      width: 30px;
+      height: 40px;
+      width: 40px;
     }
     p{
       font-size: calc($font-title-desc + 8px);
@@ -76,7 +80,8 @@ $user-bg: #eff1f1;
 
 }
 
-.button-business{
+.button-business {
+  height: 50px;
   width: 250px;
   padding: 15px 15px;
   border-radius: 50px;
@@ -86,9 +91,17 @@ $user-bg: #eff1f1;
   font-size: calc($font-readable + 3px);
   font-weight: 500;
   cursor: pointer;
-  margin-top: 90px;
   margin-left: 30px;
+  transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.25), 12px 12px 115px rgba(255, 255, 255, 0.1);
 
+  &:hover {
+    background-color: $color-white;
+    border: 2px solid $button-color;
+    color: $text-color;
+    transform: translateY(-3px);
+
+  }
 }
 
 .user-section{
@@ -96,13 +109,12 @@ $user-bg: #eff1f1;
   border-bottom: 3px solid $border-color;
   display: flex;
   flex-direction: row;
-  gap: 55px;
+  gap: 155px;
   align-items: center;
   justify-content: center;
   position: relative;
   height: 245px;
   background-color: $user-bg;
-  //margin-bottom: 50px;
   margin-top: 45px;
   overflow: hidden;
 
@@ -142,6 +154,100 @@ $user-bg: #eff1f1;
 
 }
 
+//this is for the animation
+.users h3 {
+  display: inline-block;
+  position: relative;
+
+  span {
+    opacity: 0;
+    position: relative;
+    animation: showNumber 1s forwards;
+  }
+  span:nth-child(1) {
+    animation-delay: 0s;
+  }
+  span:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+  span:nth-child(3) {
+    animation-delay: 1s;
+  }
+  span:nth-child(4) {
+    animation-delay: 1.5s;
+  }
+}
+
+@keyframes showNumber {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+//animation ends here
+
+//this one is for every 10s
+/*.users {
+  h3 {
+    display: inline-block;
+    position: relative;
+
+    span {
+      opacity: 0;
+      position: relative;
+      animation: showNumber 1s forwards;
+      animation-iteration-count: infinite;
+    }
+
+    &:nth-child(1) span:nth-child(1) {
+      animation: showNumber 1s forwards, resetNumber 10s infinite;
+      animation-delay: 0s;
+    }
+
+    &:nth-child(1) span:nth-child(2) {
+      animation: showNumber 1s 0.5s forwards, resetNumber 10s infinite;
+      animation-delay: 0.5s;
+    }
+
+    &:nth-child(1) span:nth-child(3) {
+      animation: showNumber 1s 1s forwards, resetNumber 10s infinite;
+      animation-delay: 1s;
+    }
+
+    &:nth-child(1) span:nth-child(4) {
+      animation: showNumber 1s 1.5s forwards, resetNumber 10s infinite;
+      animation-delay: 1.5s;
+    }
+  }
+}
+
+@keyframes showNumber {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}*/
+
+/*@keyframes resetNumber {
+  0%, 90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}*/
 
 
 @media only screen and (max-width: 599px) {
@@ -155,6 +261,7 @@ $user-bg: #eff1f1;
   }
   .business-section {
     flex-wrap: wrap;
+    margin-bottom: 5px;
     .business-left{
       img{
         align-items: center;
@@ -163,10 +270,19 @@ $user-bg: #eff1f1;
         max-width: 350px;
       }
     }
+    .business-right{
+      margin-bottom: 5px;
+      .all-business-texts{
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    }
 
     .business-text{
+      padding: 0 10px;
+      margin-left: 0;
       p{
-        font-size: $font-readable-sm;
+        font-size: $font-readable;
       }
     }
 
