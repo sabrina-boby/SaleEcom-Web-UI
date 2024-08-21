@@ -23,7 +23,7 @@ $button-color: #2A2A2A;
     width: 222px;
     border: 1px solid #4d4d4f;
     position: absolute;
-    left: 74%;
+    left: 73%;
   }
 }
 
@@ -122,14 +122,16 @@ $button-color: #2A2A2A;
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1080px) {
-  .bgline{
-    margin-top: 5px;
-    left: 61% !important;
+  .bg-line{
+    // margin-top: 5px;
+    // left: 61% !important;
+    display: none;
   }
   .tool-section-header{
     h2{
       font-size: $font-title-sm;
     }
+    
   }
   .tool-section{
     .powered-by-btn{
@@ -139,9 +141,7 @@ $button-color: #2A2A2A;
 
 }
 @media only screen and (max-width: 599px) {
-  .bgline{
-    left: 28% !important;
-  }
+ 
   .tool-section{
     padding-top: 0;
     flex-direction: column-reverse;
@@ -150,6 +150,11 @@ $button-color: #2A2A2A;
     h2{
       //margin-top: 150px;
       font-size: $font-title-sm;
+      text-align: center;
+    }
+    .bg-line{
+      // left: 28% !important;
+      display: none;
     }
   }
   .connections{
