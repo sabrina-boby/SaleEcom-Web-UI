@@ -25,6 +25,7 @@ $user-bg: #eff1f1;
   display: flex;
   justify-content: center;
   z-index: 2;
+  position: relative;
   h2{
     font-size: calc($font-title + 10px);
     color: $text-color;
