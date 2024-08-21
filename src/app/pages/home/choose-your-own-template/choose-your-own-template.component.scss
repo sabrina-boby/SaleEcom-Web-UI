@@ -13,6 +13,7 @@ section{
 
 .heading{
     padding: 60px;
+    position: relative;
     h1{
         color: #4d4d4f;
         font-size: calc($font-title)+10px;
@@ -21,10 +22,10 @@ section{
     }
     .bgline{
         margin-top: 5px;
-        width: 200px;
+        width: 207px;
         border: 1px solid #4d4d4f;
         position: absolute;
-        left: 56%;
+        left: 61%;
     }
 }
 
@@ -60,10 +61,11 @@ section{
             white-space: nowrap;
         }
         .bgline{
-            width: 110px;
-            border: 1px solid #4d4d4f;
-            position: absolute;
-            left: 64%;
+            // width: 110px;
+            // border: 1px solid #4d4d4f;
+            // position: absolute;
+            // left: 64%;
+            display: none;
         }
     }
 }
