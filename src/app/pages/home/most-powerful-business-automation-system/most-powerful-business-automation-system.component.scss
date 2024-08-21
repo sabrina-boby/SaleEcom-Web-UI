@@ -62,16 +62,26 @@
         height: 150px;
         margin-bottom: 20px;
         border-radius: 50%;
-        box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.2);    }
+        background-image: linear-gradient(to right,aliceblue, aliceblue,rgb(239, 239, 239),rgb(240, 240, 240),rgb(230, 230, 230),rgb(220, 220, 220), rgb(210, 210, 210),white,aliceblue);
+        // background: rgb(255,255,255);
+        // background: linear-gradient(90deg, rgba(255,255,255,1) 38%, rgba(153,153,153,1) 75%, rgba(255,255,255,1) 100%);
+        box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);    
+    }
     p{
         color: #4d4d4f;
         font-family: $font-en-secondary;
         font-size: calc($font-readable);
+        font-weight: 700;
     }
     
 }
 
 @media (max-width:800px) {
+    .heading{
+        h1{
+            font-size: $font-sub-title;
+        }
+    }
     .itemsOfProduct-container {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -80,7 +90,13 @@
     }
 }
 
+
 @media (max-width:650px) {
+    .heading{
+        h1{
+            font-size: $font-readable;
+        }
+    }
     .card {
         .image {
             width: 100px;
