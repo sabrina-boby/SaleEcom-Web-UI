@@ -15,28 +15,29 @@
     font-family: $font-en-primary;
     font-weight: 900;
     font-size: 80px;
-    color: #333;
+    color: #4d4d4f;
     margin-bottom: 0.5rem;
   }
 
   p {
     font-size: 55px;
-    color: #666;
     font-weight: 300;
+    font-family: $font-en-satoshi;
+    color: #4d4d4f;
   }
 
   .start-btn {
     padding: 20px 40px;
     font-size: 1rem;
-    color: #fff;
-    background-color: #333;
+    color: #ffffff;
+    background-color: #4d4d4f;
     border: none;
     border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin: 60px 0;
     &:hover {
-      background-color: #555;
+      background-color: #312e2e;
     }
   }
   .bip {
@@ -54,7 +55,7 @@
       from,
       to {
         opacity: 0;
-        background-color: #00c956;
+        background-color: #00C956;
       }
       50% {
         opacity: 1;
@@ -66,7 +67,7 @@
       font-weight: bold;
     }
     .highlight {
-      color: blue;
+      color: #5D36FF;
     }
   }
 }
