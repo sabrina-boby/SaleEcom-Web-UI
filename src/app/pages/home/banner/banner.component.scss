@@ -76,7 +76,9 @@
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 40px rgba(126, 126, 126, 0.2);
+  // box-shadow: 2 px solid silver;
+  background-image: linear-gradient(to right,aliceblue, aliceblue,rgb(239, 239, 239),rgb(230, 230, 230),rgb(220, 217, 217),rgb(209, 209, 209), rgb(201, 201, 201),white,aliceblue);
   z-index: 50;
   bottom: -25px;
   right: 50%;
@@ -117,6 +119,7 @@
     width: 50px;
     border-radius: 50%;
     box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to right, silver ,aliceblue, white ,silver);
     z-index: 50;
     bottom: -25px;
     right: 40%;
