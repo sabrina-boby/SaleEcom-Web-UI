@@ -8,11 +8,27 @@
     align-items: center;
   }
   
-  h2 {
-    font-size: $font-title;
-    margin-bottom: 30px;
-    color: #333;
-  }
+  // h2 {
+  //   font-size: $font-title;
+  //   margin-bottom: 30px;
+  //   color: #333;
+  // }
+
+  .heading{
+    padding: 60px;
+    h2{
+        color: #4d4d4f;
+        font-size: $font-title;
+        font-family: $font-en-primary;
+        margin-bottom: 6px;
+    }
+    .bgline{
+        width: 160px;
+        border: 1px solid black;
+        position: absolute;
+        left: 54%;
+    }
+}
   
   .steps {
     display: flex;
@@ -270,9 +286,12 @@
 
   @media only screen and (max-width: 530px) {
 
-    h2 {
-      font-size: $font-title-sm;
+    .heading{
+      h2 {
+        font-size: $font-title-sm;
+      }
     }
+    
 
     .border {
       width: 60px;
