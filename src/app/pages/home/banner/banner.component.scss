@@ -70,7 +70,16 @@
     }
   }
 }
-
+.low-button{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.2);
+  z-index: 50;
+  bottom: -25px;
+  right: 50%;
+}
 .background-graphics {
   position: absolute;
   text-align: center;
@@ -100,5 +109,15 @@
         font-size: 15px;
       }
     }
+  }
+  .low-button{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.2);
+    z-index: 50;
+    bottom: -25px;
+    right: 40%;
   }
 }

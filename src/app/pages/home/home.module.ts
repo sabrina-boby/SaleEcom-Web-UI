@@ -15,6 +15,7 @@ import { ToolsSectionComponent } from './tools-section/tools-section.component';
 import { BusinessSectionComponent } from './business-section/business-section.component';
 import { ChooseYourPlanComponent } from './choose-your-plan/choose-your-plan.component';
 import { SingleFaqComponent } from '../../shared/components/single-faq/single-faq.component';
+import { FormSectionComponent } from './form-section/form-section.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { SingleFaqComponent } from '../../shared/components/single-faq/single-fa
     MostPowerfulBusinessAutomationSystemComponent,
     ToolsSectionComponent,
     BusinessSectionComponent,
+    FormSectionComponent,
   ],
   imports: [
     CommonModule,

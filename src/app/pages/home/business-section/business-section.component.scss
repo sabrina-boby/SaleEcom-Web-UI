@@ -102,8 +102,9 @@ $user-bg: #eff1f1;
   position: relative;
   height: 245px;
   background-color: $user-bg;
-  margin-bottom: 50px;
+  //margin-bottom: 50px;
   margin-top: 45px;
+  overflow: hidden;
 
   .user-svg-left{
     position: absolute;
