@@ -16,6 +16,7 @@ import { BusinessSectionComponent } from './business-section/business-section.co
 import { ChooseYourPlanComponent } from './choose-your-plan/choose-your-plan.component';
 import { SingleFaqComponent } from '../../shared/components/single-faq/single-faq.component';
 import { FormSectionComponent } from './form-section/form-section.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,9 @@ import { FormSectionComponent } from './form-section/form-section.component';
     FeatureCardComponent,
     LazyLoadComponentDirective,
     ChooseYourOwnTemplateComponent,
-    SingleFaqComponent
+    SingleFaqComponent,
+    FormsModule,
+    ReactiveFormsModule  
   ],
 })
 export class HomeModule {}
