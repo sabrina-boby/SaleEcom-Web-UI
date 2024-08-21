@@ -35,7 +35,8 @@ $border-color: #e1e1e2;
 
     .header-contact-text {
       font-size: 12px;
-      font-weight: bolder;
+      font-weight: 900;
+      font-family: $font-en-primary;
       letter-spacing: 3px;
       color: $text-color;
       opacity: 0.5;
@@ -59,12 +60,13 @@ $border-color: #e1e1e2;
 
       .header-number-email-contact {
         font-size: 20px;
-        font-weight: 500;
+        font-weight: 700;
+        font-family: $font-en-primary;
       }
 
       .header-number-email-circle {
-        width: 8px;
-        height: 8px;
+        width: 10px;
+        height: 10px;
         border-radius: 100%;
         background-color: #0000ff;
         margin-top: 10px;
@@ -95,7 +97,7 @@ $border-color: #e1e1e2;
 
 .input-wrapper input,
 .input-wrapper textarea {
-  border: 1px solid #ccc;
+  border: 1px solid #f2f0f0;
   width: 100%;
   padding: 17px 15px;
   font-size: 16px;
@@ -113,13 +115,13 @@ $border-color: #e1e1e2;
 
 .input-wrapper input:focus,
 .input-wrapper textarea:focus {
-  border: 2px solid #add8e6; /* Light blue border */
+  border: 2px solid #add8e6;
   outline: none;
 }
 
 .input-wrapper input:hover,
 .input-wrapper textarea:hover {
-  border: 2px solid #0000ff; /* Dark blue border on hover */
+  border: 2px solid #0000ff;
 }
 
 .close-icon {
@@ -140,10 +142,28 @@ $border-color: #e1e1e2;
 .terms {
   display: flex;
   align-items: center;
+
+  .checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    max-width: 20px;
+    border: 2px solid #e1e8f1;
+    background-color: white;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+
+  .checkbox:checked {
+    background-color: #007bff;
+  }
 }
 
 .terms input[type="checkbox"] {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .send-btn {
@@ -171,7 +191,6 @@ $border-color: #e1e1e2;
 .send-btn:hover .arrow {
   margin-left: 20px;
 }
-
 
 @media (max-width: 985px) {
   .container-header-content-wraper {
@@ -213,4 +232,33 @@ $border-color: #e1e1e2;
       font-size: 15px;
     }
   }
+}
+
+.checkbox {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #007bff;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.checkbox:checked {
+  background-color: #007bff;
+}
+
+.checkbox:checked::before {
+  content: "\2714";
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.checkbox:focus {
+  border-color: #0056b3;
 }
