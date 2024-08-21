@@ -1,5 +1,5 @@
 @import "variables";
-@import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@300;400;500;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@300;400;500;700&display=swap');
 
 $text-color: #4d4d4f;
 $border-color: #c4c4c5;
@@ -28,9 +28,8 @@ $user-bg: #eff1f1;
   h2{
     //margin-top: 100px;
     font-size: calc($font-title + 10px);
-    font-weight: bold;
     color: $text-color;
-    font-family: 'Satoshi', sans-serif;
+    font-family: $font-en-primary;
   }
 }
 
@@ -69,8 +68,10 @@ $user-bg: #eff1f1;
     }
     p{
       font-size: calc($font-title-desc + 8px);
+      font-family: $font-en-satoshi;
       font-weight: 500;
       color: $text-color;
+      text-shadow: 1px 0 white, 0 -1px white;
     }
   }
 
@@ -129,6 +130,7 @@ $user-bg: #eff1f1;
     h3{
       font-size: calc($font-sub-title + 10px);
       font-weight: 600;
+      font-family: $font-en-satoshi;
       color: $text-color;
       z-index: 1;
     }
@@ -136,6 +138,7 @@ $user-bg: #eff1f1;
       font-size: $font-sub-title-sm;
       font-weight: 400;
       color: $text-color;
+      font-family: $font-en-satoshi;
       z-index: 1;
     }
   }
