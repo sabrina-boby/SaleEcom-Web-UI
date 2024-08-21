@@ -1,5 +1,5 @@
 @import "variables";
-@import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@300;400;500;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@300;400;500;700&display=swap');
 
 $text-color: #4d4d4f;
 $border-color: #c4c4c5;
@@ -12,12 +12,33 @@ $button-color: #2A2A2A;
   align-items: center;
   color: $text-color;
   h2{
+
+    font-size:calc($font-title)+10px ;
+    font-family: $font-en-primary;
+    margin-top: 50px;
+  }
+  .bgline{
+    margin-top: 140px;
+    width: 222px;
+    border: 1px solid #4d4d4f;
+    position: absolute;
+    left: 72%;
+}
+
     font-size: calc($font-title + 10px);
     font-weight: bold;
     font-family: 'Satoshi', sans-serif;
     margin-top: 50px;
   }
-}
+  .bgline{
+    margin-top: 130px;
+    width: 200px;
+    border: 1px solid #4d4d4f;
+    position: absolute;
+    left: 76%;
+  }
+
+
 
 .tool-section{
   display: flex;
@@ -47,7 +68,10 @@ $button-color: #2A2A2A;
     text-align: center;
     position: relative;
     z-index: 2;
+    background-image: linear-gradient(to right, black,rgb(82, 82, 82),black );
+
     background: linear-gradient(60deg, #2A2A2A, #5a5a5a, #2A2A2A);
+
     color: white;
     padding: 20px 20px;
     border-radius: 8px;
@@ -75,6 +99,8 @@ $button-color: #2A2A2A;
   align-items: center;
 
   .tech-box {
+
+    border: 2px solid $border-color;
     display: flex;
     flex-direction: column;
     width: 350px;
@@ -83,16 +109,17 @@ $button-color: #2A2A2A;
     box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.2);
     padding: 20px;
     background-color: $color-white;
-    border-radius: 10px;
+    border-radius: 12px;
 
     p{
+      font-family: $font-en-satoshi ;
       font-weight: 400;
       color: $text-color;
     }
 
     .text-link{
       font-size: calc($font-readable + 3px );
-      font-weight: 400;
+      font-weight: 700;
       display: flex;
       flex-direction: row;
       a{
@@ -116,9 +143,10 @@ $button-color: #2A2A2A;
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1080px) {
-  //.tech-stack{
-  //  grid-template-columns: 1fr 1fr;
-  //}
+  .bgline{
+    margin-top: 5px;
+    left: 61% !important;
+  }
   .tool-section-header{
     h2{
       font-size: $font-title-sm;
@@ -132,9 +160,9 @@ $button-color: #2A2A2A;
 
 }
 @media only screen and (max-width: 599px) {
-  //.tech-stack{
-  //  grid-template-columns: 1fr;
-  //}
+  .bgline{
+    left: 28% !important;
+  }
   .tool-section{
     padding-top: 0;
     flex-direction: column-reverse;
