@@ -9,6 +9,7 @@ header {
   border-bottom: 1px solid rgb(218, 216, 216);
   justify-content: center;
   align-items: center;
+  position: relative;
   z-index: 100;
   .container {
     display: flex;
@@ -88,6 +89,8 @@ header {
 
   .button {
     button {
+      display: flex;
+      align-items: center;
       border-radius: 8px;
       border: none;
       height: 30px;
@@ -96,15 +99,21 @@ header {
       color: $color-white;
       cursor: pointer;
       font-weight: 600;
+
+      .btn-icon{
+        width: 30px;
+        height: 30px;
+        
+        img{
+          width: 100%;
+        }
+      }
     }
 
     button:hover {
-      font-weight: 600;
       // box-shadow: 0 15px 15px 0;
-      border: 1px solid black;
       transition-duration: 0.4s;
-      background: $color-white;
-      color: $color-black;
+      background-color: #4d4a4a;
     }
   }
 
