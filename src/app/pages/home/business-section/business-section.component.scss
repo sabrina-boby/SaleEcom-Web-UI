@@ -31,6 +31,13 @@ $user-bg: #eff1f1;
     color: $text-color;
     font-family: 'Satoshi', sans-serif;
   }
+  .bgline{
+    margin-top: 60px;
+    width: 200px;
+    border: 1px solid #4d4d4f;
+    position: absolute;
+    left: 56%;
+  }
 }
 
 .business-section{
@@ -92,7 +99,7 @@ $user-bg: #eff1f1;
   font-weight: 500;
   cursor: pointer;
   margin-left: 30px;
-  transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.7s ease, transform 0.5s ease;
   box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.25), 12px 12px 115px rgba(255, 255, 255, 0.1);
 
   &:hover {
@@ -257,6 +264,10 @@ $user-bg: #eff1f1;
     h2{
       font-size: calc($font-title - 8px);
     }
+    .bgline{
+      margin-top: 40px;
+      left: 41% !important;
+    }
   }
   .business-section {
     flex-wrap: wrap;
@@ -338,7 +349,6 @@ $user-bg: #eff1f1;
     }
 
     .button-business{
-      //width: 65%;
       margin-top: 10px;
       display: flex;
       align-items: center;
