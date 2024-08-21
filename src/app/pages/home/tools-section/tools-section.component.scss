@@ -12,7 +12,7 @@ $button-color: #2A2A2A;
   align-items: center;
   color: $text-color;
   h2{
-    font-size: $font-title;
+    font-size: calc($font-title + 10px);
     font-weight: bold;
     font-family: 'Satoshi', sans-serif;
     margin-top: 50px;
@@ -47,7 +47,7 @@ $button-color: #2A2A2A;
     text-align: center;
     position: relative;
     z-index: 2;
-    background-color: $button-color;
+    background: linear-gradient(60deg, #2A2A2A, #5a5a5a, #2A2A2A);
     color: white;
     padding: 20px 20px;
     border-radius: 8px;
@@ -60,14 +60,25 @@ $button-color: #2A2A2A;
 }
 
 .tech-stack {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 3rem;
+  //display: grid;
+  //grid-template-columns: 1fr 1fr 1fr;
+  //grid-gap: 3rem;
+  //width: 300px;
+  //height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
   margin-top: 50px;
   margin-bottom: 50px;
   align-items: center;
 
   .tech-box {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 230px;
     border: 1px solid $border-color;
     box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.2);
     padding: 20px;
@@ -105,9 +116,9 @@ $button-color: #2A2A2A;
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1080px) {
-  .tech-stack{
-    grid-template-columns: 1fr 1fr;
-  }
+  //.tech-stack{
+  //  grid-template-columns: 1fr 1fr;
+  //}
   .tool-section-header{
     h2{
       font-size: $font-title-sm;
@@ -121,9 +132,9 @@ $button-color: #2A2A2A;
 
 }
 @media only screen and (max-width: 599px) {
-  .tech-stack{
-    grid-template-columns: 1fr;
-  }
+  //.tech-stack{
+  //  grid-template-columns: 1fr;
+  //}
   .tool-section{
     padding-top: 0;
     flex-direction: column-reverse;
