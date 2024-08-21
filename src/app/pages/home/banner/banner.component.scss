@@ -1,6 +1,6 @@
 @import "variables";
 .hero-section {
-  margin:-60px auto 5px auto;
+  margin: -60px auto 5px auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,7 +58,7 @@
       from,
       to {
         opacity: 0;
-        background-color: #00C956;
+        background-color: #00c956;
       }
       50% {
         opacity: 1;
@@ -69,20 +69,31 @@
       font-weight: bold;
     }
     .highlight {
-      color: #5D36FF;
+      color: #5d36ff;
     }
   }
 }
-.low-button{
+.low-button {
   position: absolute;
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  box-shadow: inset 0 0 40px rgba(126, 126, 126, 0.2);
-  background-image: linear-gradient(to right,aliceblue, aliceblue,rgb(239, 239, 239),rgb(230, 230, 230),rgb(220, 217, 217),rgb(209, 209, 209), rgb(201, 201, 201),white,aliceblue);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-image: linear-gradient(
+    to right,
+    aliceblue,
+    aliceblue,
+    rgb(239, 239, 239),
+    rgb(230, 230, 230),
+    rgb(220, 217, 217),
+    rgb(209, 209, 209),
+    rgb(201, 201, 201),
+    white,
+    aliceblue
+  );
   z-index: 50;
   bottom: -25px;
-  right: 49%;
+  right: 48%;
 }
 .background-graphics {
   position: absolute;
@@ -109,12 +120,12 @@
       margin: 40px 0;
     }
     .bip {
-      p{
+      p {
         font-size: 15px;
       }
     }
   }
-  .low-button{
+  .low-button {
     right: 45%;
   }
 }

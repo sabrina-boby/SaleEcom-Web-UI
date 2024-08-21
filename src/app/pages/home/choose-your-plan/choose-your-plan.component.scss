@@ -1,13 +1,20 @@
 @import 'variables';
+.container{
+    height: 120vh;
+}
 
-.container {
-    background-image: url(/asset/bg.svg);
-    width: 100%;
+.bg{
+    position: relative;
+    img{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    height: 120vh;
-    position: relative;
+    background-size: contain;
+    }
 }
 
 .round-img {
