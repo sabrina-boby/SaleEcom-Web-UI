@@ -3,17 +3,17 @@
 $text-color: #424243;
 $border-color: #e1e1e2;
 
-.simple-section{
+.simple-section {
   overflow: hidden;
   padding-bottom: 150px;
 }
-.form-section{
+.form-section {
   position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
 
-  .form-bg{
+  .form-bg {
     position: absolute;
     width: 100%;
     z-index: -1;
@@ -21,30 +21,31 @@ $border-color: #e1e1e2;
 }
 .container-header-content-wraper {
   position: relative;
-  width: 70%;
+  width: 75%;
   display: flex;
   justify-content: space-between;
   align-items: self-start;
   gap: 60px;
   margin-top: 100px;
 
-
   .header {
     display: flex;
     flex-direction: column;
     flex-basis: 50%;
+
     .header-contact-text {
-      font-size: 16px;
-      font-weight: bold;
+      font-size: 12px;
+      font-weight: bolder;
+      letter-spacing: 3px;
       color: $text-color;
       opacity: 0.5;
-
     }
 
     .header-question-text {
-      font-size: 50px;
-      font-weight: 700;
-      margin-top: 20px;
+      font-size: 45px;
+      font-weight: 800;
+      line-height: 60px;
+      margin-top: 10px;
       color: $text-color;
       .call-icon {
         color: #0000ff;
@@ -54,7 +55,7 @@ $border-color: #e1e1e2;
     .header-number-email {
       display: flex;
       gap: 15px;
-      margin-top: 30px;
+      margin-top: 40px;
 
       .header-number-email-contact {
         font-size: 20px;
@@ -72,56 +73,53 @@ $border-color: #e1e1e2;
       .header-number-email-email {
         font-size: 20px;
         font-weight: 700;
+        text-decoration: none;
       }
     }
   }
-
-  .content {
-    display: flex;
-    flex-basis: 50%;
-    margin: 0 20px;
-  }
+}
+.content {
+  display: flex;
+  flex-basis: 50%;
+  margin: 0 20px;
 }
 
 .form-group {
+  position: relative;
   margin-bottom: 20px;
 }
 
 .input-wrapper {
   position: relative;
-  input{
-    border: 1px solid $border-color;
-  }
-  input::placeholder{
-    font-weight: bold;
-    color: $color-secondary;
-  }
-
-  textarea::placeholder{
-    font-weight: bold;
-    color: $color-secondary;
-  }
 }
 
-.alert {
-  text-align: center;
-  color: red;
-  // margin-top: 5px;
-}
-
-.form-control {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
+.input-wrapper input,
+.input-wrapper textarea {
   border: 1px solid #ccc;
+  width: 100%;
+  padding: 17px 15px;
+  font-size: 16px;
   border-radius: 4px;
   transition: border 0.3s;
 }
 
-.form-control:focus,
-.form-control:hover {
-  border: 2px solid #0000ff;
+.input-wrapper input::placeholder,
+.input-wrapper textarea::placeholder {
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0.6;
+  color: rgb(79, 44, 111);
+}
+
+.input-wrapper input:focus,
+.input-wrapper textarea:focus {
+  border: 2px solid #add8e6; /* Light blue border */
   outline: none;
+}
+
+.input-wrapper input:hover,
+.input-wrapper textarea:hover {
+  border: 2px solid #0000ff; /* Dark blue border on hover */
 }
 
 .close-icon {
@@ -149,18 +147,15 @@ $border-color: #e1e1e2;
 }
 
 .send-btn {
-  // display: inline-flex;
   align-items: center;
   padding: 10px 20px;
   background-color: transparent;
-  border: 2px solid $border-color;
-  color: $color-black;
-  //border: none;
+  border: 2px solid #0000ff;
+  color: #000;
   width: 100%;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  // text-align: center;
   transition: padding 0.3s;
 }
 
@@ -177,6 +172,7 @@ $border-color: #e1e1e2;
   margin-left: 20px;
 }
 
+
 @media (max-width: 985px) {
   .container-header-content-wraper {
     .header {
@@ -190,6 +186,8 @@ $border-color: #e1e1e2;
   .container-header-content-wraper {
     display: flex;
     flex-direction: column;
+    width: 95%;
+    margin-top: 50px;
   }
 
   .header-contact-text {
@@ -204,6 +202,7 @@ $border-color: #e1e1e2;
 
     .header-number-email-contact {
       font-size: 15px;
+      font-weight: 900;
     }
 
     .header-number-email-circle {

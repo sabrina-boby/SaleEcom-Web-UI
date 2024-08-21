@@ -6,7 +6,7 @@
   align-items: center;
   height: 100vh;
   position: relative;
-  z-index: -100;
+  // z-index: -100;
   // margin-bottom: 30px;
 }
 
@@ -82,7 +82,7 @@
   background-image: linear-gradient(to right,aliceblue, aliceblue,rgb(239, 239, 239),rgb(230, 230, 230),rgb(220, 217, 217),rgb(209, 209, 209), rgb(201, 201, 201),white,aliceblue);
   z-index: 50;
   bottom: -25px;
-  right: 50%;
+  right: 49%;
 }
 .background-graphics {
   position: absolute;
@@ -91,7 +91,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 5;
+  z-index: -1;
   background: url("/asset/Main_Banner.png") no-repeat center center;
   background-size: cover;
 }
@@ -113,5 +113,8 @@
         font-size: 15px;
       }
     }
+  }
+  .low-button{
+    right: 45%;
   }
 }
