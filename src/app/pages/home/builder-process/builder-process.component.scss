@@ -35,16 +35,16 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  width: 830px;
-  height: 220px;
+  width: 1050px;
+  height: 260px;
   margin-top: 20px;
 
   .dot-arrow1 {
     // background: red;
     position: absolute;
-    left: 11%;
-    top: 10%;
-    width: 145px;
+    left: 12%;
+    top: 8%;
+    width: 175px;
     img {
       width: 100%;
     }
@@ -52,9 +52,9 @@
 
   .dot-arrow2 {
     position: absolute;
-    left: 39%;
+    left: 40%;
     top: 52%;
-    width: 145px;
+    width: 173px;
     img {
       width: 100%;
     }
@@ -62,9 +62,9 @@
 
   .dot-arrow3 {
     position: absolute;
-    top: 49%;
-    right: 13%;
-    width: 145px;
+    top: 48%;
+    right: 13.5%;
+    width: 172px;
     img {
       width: 100%;
     }
@@ -73,7 +73,7 @@
   .step01 {
     position: absolute;
     left: 0;
-    bottom: 20px;
+    bottom: 25px;
   }
 
   .step02 {
@@ -104,19 +104,19 @@
 }
 
 .border {
-  width: 170px;
-  height: 170px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  transition: transform 1s ease; /* Smooth rotation transition */
+  transition: 3s all ease; /* Smooth rotation transition */
 }
 
 .start-build {
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -131,12 +131,12 @@
 }
 
 .step:hover .border {
-  transform: rotate(180deg); /* Rotates the border 180 degrees */
-  transition: 0.6s all ease;
+  transform: rotate(180deg); /* Rotates the border 90 degrees */
+  transition: 3s all ease;
 }
 
 .border-colour1 {
-  border: 4px dashed #fcc76b;
+  border: 3px dashed #fcc76b;
 }
 
 .bg-colour1 {
@@ -199,74 +199,81 @@ p {
   color: #002e8f;
 }
 
-// @media only screen and (max-width: 870px) {
-//   .border {
-//     width: 120px;
-//     height: 120px;
-//   }
+@media only screen and (max-width: 1100px) {
 
-//   .bg-colour4 {
-//     p {
-//       font-size: 10px;
-//     }
-//   }
+  .heading {
+    padding: 20px;
+   
+  }
+  .border {
+    width: 90px;
+    height: 90px;
+  }
 
-//   .start-build {
-//     width: 100px;
-//     height: 100px;
+  .bg-colour4 {
+    p {
+      font-size: 10px;
+    }
+  }
 
-//     img {
-//       height: 40px;
-//       width: 40px;
-//     }
-//   }
+  .start-build {
+    width: 70px;
+    height: 70px;
 
-//   .steps {
-//     width: 500px;
-//     height: 155px;
+    img {
+      height: 40px;
+      width: 40px;
+    }
+  }
 
-//     .dot-arrow1 {
-//       left: 12%;
-//       top: 3%;
-//       width: 90px;
-//     }
+  .steps {
+    width: 500px;
+    height: 155px;
 
-//     .dot-arrow2 {
-//       left: 40%;
-//       top: 52%;
-//       width: 85px;
-//     }
+    .dot-arrow1 {
+      left: 12%;
+      top: 3%;
+      width: 90px;
+    }
 
-//     .dot-arrow3 {
-//       top: 51%;
-//       right: 15%;
-//       width: 65px;
-//     }
+    .dot-arrow2 {
+      left: 40%;
+      top: 52%;
+      width: 85px;
+    }
 
-//     .step01 {
-//       left: 0;
-//       bottom: 10px;
-//     }
+    .dot-arrow3 {
+      top: 51%;
+      right: 15%;
+      width: 65px;
+    }
 
-//     .step02 {
-//       left: 24%;
-//       top: 0px;
-//     }
+    .step01 {
+      left: 0;
+      bottom: 10px;
+    }
 
-//     .step03 {
-//       right: 25%;
-//       bottom: 0px;
-//     }
+    .step02 {
+      left: 24%;
+      top: 0px;
+    }
 
-//     .step04 {
-//       right: 0;
-//       top: 0;
-//     }
-//   }
-// }
+    .step03 {
+      right: 25%;
+      bottom: 0px;
+    }
+
+    .step04 {
+      right: 0;
+      top: 0;
+    }
+  }
+}
 
 @media only screen and (max-width: 530px) {
   .heading {
+    padding: 10px;
+
     h2 {
       font-size: $font-title-sm;
     }
