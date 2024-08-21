@@ -1,73 +1,138 @@
 @import 'variables';
 .container{
-    background-image: url(/asset/bg.svg);
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+    height: 120vh;
 }
-.round-img{
-    // height: 50vh;
-    // display: flex;
+
+.bg{
+    position: relative;
+    img{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    }
+}
+
+.round-img {
     width: 60%;
-    // justify-content: center;
-    // align-items: center;
     transform: translate(33%);
     color: black;
     text-align: center;
-    // border: 1px solid red;
 }
+
 .section-header h2 {
     font-size: 50px;
     font-weight: 700;
     color: #333;
     position: relative;
-    // background-color: red;
-    position:absolute;
+    position: absolute;
     top: 30px;
     left: 240px;
-    // transform: translate(20%);
-    // margin-bottom: 60px;
 }
 
 .section-header h2::after {
     content: "";
     width: 100px;
-    height: 2px;
+    height: 1px;
     background-color: #333;
     position: absolute;
     left: 50%;
     transform: translateX(70%);
     bottom: 0;
 }
+
 .pricing-plans {
     display: flex;
     justify-content: center;
-    // flex-direction: row;
-    // flex-wrap: wrap;
     position: absolute;
     top: 170px;
     align-items: center;
     gap: 40px;
     width: auto;
-    // border: 1px solid red;
-        transform: translate(-11%);
+    transform: translate(-11%);
 }
+
 .plan-card {
     background: #fff;
-    border-radius: 15px;
+    border-radius: 30px;
     padding: 20px;
     box-shadow: rgba(165, 165, 165) 0px 0px 10px 0px inset, 0px 0px 15px rgba(0, 0, 0, 0.1);
     width: 340px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid rgb(165, 165, 165);
-    // left: 0px;
-
-    // top: 0px;
-    
 }
+
+.plan-card button {
+    color: white;
+    border: none;
+    padding: 16px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 1rem;
+
+}
+
+.plan-card.base button {
+    color: black;
+    box-shadow: rgb(77, 76, 76) 0px 0px 5px 0px inset;
+    background: rgb(20, 231, 106);
+    background: linear-gradient(90deg, rgba(20, 231, 106, 1) 34%, rgba(7, 152, 134, 1) 90%);
+
+}
+
+.plan-card.premium button {
+    color: black;
+    box-shadow: rgb(77, 76, 76) 0px 0px 5px 0px inset;
+    background: rgb(255, 195, 92);
+    background: linear-gradient(90deg, rgba(255, 195, 92, 1) 51%, rgba(255, 136, 29, 1) 100%);
+}
+
+.plan-card.unlimited {
+    button {
+        color: black;
+        font-weight: 500;
+        box-shadow: rgb(77, 76, 76) 0px 0px 5px 0px inset;
+        background: rgb(100, 219, 176);
+        background: linear-gradient(90deg, rgba(100, 219, 176, 1) 21%, rgba(255, 205, 89, 1) 98%);
+    }
+
+    h4 {
+        font-size: 20px;
+        font-weight: bold;
+        background: rgb(100, 219, 176);
+        background: linear-gradient(90deg, rgba(100, 219, 176, 1) 13%, rgba(255, 205, 89, 1) 25%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+    }
+}
+
+.plan-card.premium h4 {
+    font-size: 20px;
+    background: rgb(252, 195, 92);
+    background: linear-gradient(90deg, rgba(252, 195, 92, 1) 10%, rgba(255, 136, 29, 1) 19%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin-top: 10px;
+}
+
+.plan-card.active {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 25px rgba(200, 255, 2, 0.2) rgba(0, 0, 0, 1) 0px 0px 10px 0px inset;
+    border: 2px solid orange;
+    // border-color: linear-gradient(90deg, rgba(255,195,92,1) 51%, rgba(255,136,29,1) 100%) ;
+}
+
 .head {
-    // border: 1px solid red;
     text-align: left;
 
     h4 {
@@ -87,25 +152,22 @@
     }
 
 }
+
 .content {
     display: flex;
     flex-direction: row;
     gap: 10px;
     text-align: center;
     margin-top: 20px;
-
-    // border: 1px solid red;
-
 }
+
 .right-text {
     display: flex;
     flex-direction: column;
     gap: 18px;
 
-    // border: 1px solid red;
     p {
         font-size: 14px;
-        // border: 1px solid red;
     }
 }
 
@@ -113,37 +175,11 @@
     margin-top: 15px;
 }
 
-
-// .pricing-container {
-//     text-align: center;
-//     background-image: url(/asset/bg.svg);
-//     height: 90vh;
-//     position: relative;
-// }
-
-// .round {
-//     position: absolute;
-//     color: black;
-//     z-index: 100000;
-//     width: 700px;
-//     height: 70px;
-//     transform: translateX(900%);
-//     background-color: red;
-// }
-
-
-
-
-
-
-
-
 .price {
     display: flex;
     flex-direction: row;
     align-items: center;
 
-    // border: 1px solid red;
     h3 {
         font-size: 32px;
         color: #494949;
@@ -157,89 +193,24 @@
     gap: 5px;
     height: 30px;
     width: 30px;
-    // border: 1px solid red;
-    
-
-}
-
-
-
-
-
-.plan-card button {
-    // background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 16px;
-    width: 100%;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 15px;
-    font-size: 1rem;
-}
-
-.plan-card.base button {
-    color: black;
-    background: rgb(20, 231, 106);
-    background: linear-gradient(90deg, rgba(20, 231, 106, 1) 21%, rgba(7, 152, 134, 1) 55%, rgba(104, 124, 122, 1) 86%);
-
-}
-
-.plan-card.premium button {
-    color: black;
-    background: rgb(255, 195, 92);
-    background: linear-gradient(90deg, rgba(255, 195, 92, 1) 21%, rgba(255, 136, 29, 1) 55%, rgba(115, 108, 108, 1) 100%);
-}
-
-.plan-card.premium h4 {
-    font-size: 16px;
-    color: #FF9800;
-    margin-top: 10px;
-    // padding-right: 20px;
-    // border: 1px solid red;
-}
-
-.plan-card.unlimited {
-    button {
-        color: black;
-        font-weight: 500;
-        background: rgb(100, 219, 176);
-        background: linear-gradient(90deg, rgba(100, 219, 176, 1) 21%, rgba(255, 205, 89, 1) 98%);
-    }
-    h4{
-        font-size: 20px;
-        font-weight: bold;
-        background: linear-gradient(to right, #60c69f, #c2b378, #f79552);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent;
-    }
 }
 
 .popular {
-    // display: flex;
-    text-align: right;
-    // justify-content: center;
+    // text-align: right;
     // align-items: center;
-    font-size: 16px;
-    background: linear-gradient(to right, #c2b378, #f79552);
+    transform: translate(150%);
+    // margin-top: 60px;
+    padding: 2px 0px;
+    font-size: 14px;
+    border: 1px solid rgba(255, 136, 29, 1);
+    width: 40%;
+    border-radius: 30px;
+    background: rgb(252, 195, 92);
+    background: linear-gradient(90deg, rgba(252, 195, 92, 1) 32%, rgba(255, 136, 29, 1) 45%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
-    // border: 1px solid orange;
-    // height: 20px;
-    // width: 110px;
-    // border-radius: 20px;
-}
-
-
-
-.plan-card.active {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 25px rgba(200, 255, 2, 0.2);
-    border: 2px solid orange;
 }
 
 .star-svg {
@@ -249,14 +220,53 @@
 
 
 /* Mobile Responsiveness */
-@media (max-width: 768px) {
+@media only screen and (max-width: 599px) {
+    .container {
+        // align-items: center;
+        height: 210vh;
+    }
+    .section-header h2 {
+             left: 10px;
+            //  width: 100%;
+            //  margin-bottom: 60px;
+    }
+
+    .section-header h2::after {
+        display: none;
+        // margin-bottom: 30px;
+    }
+    .right-text {
+        gap: 14px;
+        margin-top: 3px;
+    
+        p {
+            font-size: 16px;
+        }
+    }
+
     .pricing-plans {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        margin-right: 90px;
+        // top: 0px;
+        // left: 0px;
+        // right: 0px;
     }
 
     .plan-card {
-        width: 90%;
+        width: 340px;
         margin-bottom: 20px;
     }
 }
+// @media only screen and (max-width: 800px){
+//     .container {
+//         // align-items: center;
+//         height: 60vh;
+//     }
+//     .pricing-plans{
+//         // align-items: center;
+//         transform: translate(-20%);
+//         border: 1px solid red;
+//     }
+// }

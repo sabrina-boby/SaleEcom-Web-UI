@@ -1,377 +1,352 @@
 @import "variables";
 
 .process-container {
-    text-align: center;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  // h2 {
-  //   font-size: $font-title;
-  //   margin-bottom: 30px;
-  //   color: #333;
-  // }
-
-  .heading{
-    padding: 60px;
-    h2{
-        color: #4d4d4f;
-        font-size: $font-title;
-        font-family: $font-en-primary;
-        margin-bottom: 6px;
-    }
-    .bgline{
-        width: 160px;
-        border: 1px solid black;
-        position: absolute;
-        left: 54%;
-    }
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-  
+
+// h2 {
+//   font-size: $font-title;
+//   margin-bottom: 30px;
+//   color: #333;
+// }
+
+.heading {
+  padding: 60px;
+  h2 {
+    color: #4d4d4f;
+    font-size: $font-title;
+    font-family: $font-en-primary;
+    margin-bottom: 6px;
+  }
+  .bgline {
+    width: 160px;
+    border: 1px solid black;
+    position: absolute;
+    left: 54%;
+  }
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 1050px;
+  height: 260px;
+  margin-top: 20px;
+
+  .dot-arrow1 {
+    // background: red;
+    position: absolute;
+    left: 12%;
+    top: 8%;
+    width: 175px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .dot-arrow2 {
+    position: absolute;
+    left: 40%;
+    top: 52%;
+    width: 173px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .dot-arrow3 {
+    position: absolute;
+    top: 48%;
+    right: 13.5%;
+    width: 172px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .step01 {
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+  }
+
+  .step02 {
+    position: absolute;
+    left: 28%;
+    top: 0px;
+  }
+
+  .step03 {
+    position: absolute;
+    right: 29%;
+    bottom: 0px;
+  }
+
+  .step04 {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.step {
+  // background: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.border {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 3s all ease; /* Smooth rotation transition */
+}
+
+.start-build {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  box-shadow: inset 0px 0 10px rgb(111, 89, 89, 0.3);
+  img {
+    height: 85px;
+    width: 85px;
+  }
+}
+
+.step:hover .border {
+  transform: rotate(180deg); /* Rotates the border 90 degrees */
+  transition: 3s all ease;
+}
+
+.border-colour1 {
+  border: 3px dashed #fcc76b;
+}
+
+.bg-colour1 {
+  background: #fcc76b;
+}
+
+.border-colour2 {
+  border: 3px dashed #1db495;
+}
+
+.bg-colour2 {
+  background: #1db495;
+}
+
+.border-colour3 {
+  border: 3px dashed #ff3e3e;
+}
+
+.bg-colour3 {
+  background: #ff3e3e;
+}
+
+.border-colour4 {
+  border: 3px dashed #013777;
+}
+
+.bg-colour4 {
+  background: #013777;
+  p {
+    margin-top: 5px;
+    font-size: 16px;
+    color: rgb(197, 195, 195);
+  }
+}
+
+.arrow {
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+}
+
+p {
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.font-colour1 {
+  color: #f8b500;
+}
+
+.font-colour2 {
+  color: #338a3e;
+}
+
+.font-colour3 {
+  color: #ff3e3e;
+}
+
+.font-colour4 {
+  color: #002e8f;
+}
+
+@media only screen and (max-width: 1100px) {
+
+  .heading {
+    padding: 20px;
+   
+  }
+  .border {
+    width: 90px;
+    height: 90px;
+  }
+
+  .bg-colour4 {
+    p {
+      font-size: 10px;
+    }
+  }
+
+  .start-build {
+    width: 70px;
+    height: 70px;
+
+    img {
+      height: 40px;
+      width: 40px;
+    }
+  }
+
   .steps {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    width: 830px;
-    height: 220px;
-    margin-top: 20px;
+    width: 500px;
+    height: 155px;
 
-    
-
-    .dot-arrow1{
-      position: absolute;
-      left: 11%;
-      top: 10%;
-      width: 145px;
-      img{
-        width: 100%;
-      }
+    .dot-arrow1 {
+      left: 12%;
+      top: 3%;
+      width: 90px;
     }
 
-    .dot-arrow2{
-      position: absolute;
-      left: 39%;
+    .dot-arrow2 {
+      left: 40%;
       top: 52%;
-      width: 145px;
-      img{
-        width: 100%;
-      }
+      width: 85px;
     }
 
-    .dot-arrow3{
-      position: absolute;
-      top: 49%;
-      right: 13%;
-      width: 145px;
-      img{
-        width: 100%;
-      }
-
+    .dot-arrow3 {
+      top: 51%;
+      right: 15%;
+      width: 65px;
     }
 
-    .step01{
-      position: absolute;
+    .step01 {
       left: 0;
-      bottom: 20px;
-
+      bottom: 10px;
     }
 
-    .step02{
-      position: absolute;
-      left: 28%;
+    .step02 {
+      left: 24%;
       top: 0px;
     }
 
-    .step03{
-      position: absolute;
-      right: 29%;
+    .step03 {
+      right: 25%;
       bottom: 0px;
     }
 
-    .step04{
-      position: absolute;
+    .step04 {
       right: 0;
       top: 0;
     }
   }
-  
-  .step {
-    // background: red;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
+}
 
-    
+@media only screen and (max-width: 530px) {
+  .heading {
+    padding: 10px;
+
+    h2 {
+      font-size: $font-title-sm;
+    }
   }
 
-
-  
   .border {
-    width: 125px;
-    height: 125px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    transition: transform 1s ease; /* Smooth rotation transition */
+    width: 60px;
+    height: 60px;
   }
-  
-  .start-build {
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 7px;
-    box-shadow: inset 0px 0 10px rgb(111, 89, 89,0.3);
-    img {
-      height: 85px;
-      width: 85px;
-    }
-  }
-  
-  .step:hover .border {
-    transform: rotate(180deg); /* Rotates the border 180 degrees */
-    transition: 0.6s all ease;
-  }
-  
-  .border-colour1 {
-    border: 2px dashed #fcc76b;
-  }
-  
-  .bg-colour1 {
-    background: #fcc76b;
-  }
-  
-  .border-colour2 {
-    border: 2px dashed #1db495;
-  }
-  
-  .bg-colour2 {
-    background: #1db495;
-  }
-  
-  .border-colour3 {
-    border: 2px dashed #ff3e3e;
-  }
-  
-  .bg-colour3 {
-    background: #ff3e3e;
-  }
-  
-  .border-colour4 {
-    border: 2px dashed #013777;
-  }
-  
+
   .bg-colour4 {
-    background: #013777;
-    p{
-      margin-top: 5px;
-      font-size: 16px;
-      color: rgb(197, 195, 195);
-    }
-  }
-  
-  .arrow {
-    width: 50px;
-    height: 50px;
-    background-size: contain;
-  }
-  
-  p {
-    margin-top: 15px;
-    font-weight: 600;
-  }
-  
-  .font-colour1 {
-    color: #f8b500;
-  }
-  
-  .font-colour2 {
-    color: #338a3e;
-  }
-  
-  .font-colour3 {
-    color: #ff3e3e;
-  }
-  
-  .font-colour4 {
-    color: #002e8f;
-  }
-
-
-  @media only screen and (max-width: 870px) {
-
-    .border {
-      width: 90px;
-      height: 90px;
-    }
-
-    .bg-colour4 {
-      p{
-        font-size: 10px;
-      }
-    }
-
-    .start-build {
-      width: 75px;
-      height: 75px;
-      
-    
-      img {
-        height: 40px;
-        width: 40px;
-      }
-    }
-
-    .steps {
-      
-      width: 500px;
-      height: 155px;
-  
-      
-  
-      .dot-arrow1{
-        left: 12%;
-        top: 3%;
-        width: 90px;
-        
-      }
-  
-      .dot-arrow2{
-        left: 40%;
-        top: 52%;
-        width: 85px;
-        
-      }
-  
-      .dot-arrow3{
-        top: 51%;
-        right: 15%;
-        width: 65px;
-        
-  
-      }
-  
-      .step01{
-        left: 0;
-        bottom: 10px;
-  
-      }
-  
-      .step02{
-        left: 24%;
-        top: 0px;
-      }
-  
-      .step03{
-        right: 25%;
-        bottom: 0px;
-      }
-  
-      .step04{
-        right: 0;
-        top: 0;
-      }
-    }
-
-  }
-
-
-  @media only screen and (max-width: 530px) {
-
-    .heading{
-      h2 {
-        font-size: $font-title-sm;
-      }
-    }
-    
-
-    .border {
-      width: 60px;
-      height: 60px;
-    }
-
-    .bg-colour4 {
-      p{
-        font-size: 8px;
-        margin-top: 5px;
-      }
-    }
-
-    .start-build {
-      width: 45px;
-      height: 45px;
-      
-    
-      img {
-        height: 35px;
-        width: 35px;
-      }
-    }
-
     p {
-      margin-top: 20px;
-      font-size: 12px;
+      font-size: 8px;
+      margin-top: 5px;
     }
-
-    .steps {
-      
-      width: 330px;
-      height: 125px;
-  
-      
-  
-      .dot-arrow1{
-        left: 11%;
-        top: 5%;
-        width: 50px;
-        
-      }
-  
-      .dot-arrow2{
-        left: 38%;
-        top: 44%;
-        width: 60px;
-        
-      }
-  
-      .dot-arrow3{
-        top: 46%;
-        right: 13%;
-        width: 50px;
-        
-  
-      }
-  
-      .step01{
-        left: 0;
-        bottom: 10px;
-  
-      }
-  
-      .step02{
-        left: 20%;
-        top: 0px;
-      }
-  
-      .step03{
-        right: 24%;
-        bottom: 0px;
-      }
-  
-      .step04{
-        right: 0;
-        top: 0;
-      }
-    }
-
   }
-  
+
+  .start-build {
+    width: 45px;
+    height: 45px;
+    top: 8px;
+
+    img {
+      height: 35px;
+      width: 35px;
+    }
+  }
+
+  p {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+
+  .steps {
+    width: 330px;
+    height: 125px;
+
+    .dot-arrow1 {
+      left: 11%;
+      top: 5%;
+      width: 50px;
+    }
+
+    .dot-arrow2 {
+      left: 38%;
+      top: 44%;
+      width: 60px;
+    }
+
+    .dot-arrow3 {
+      top: 46%;
+      right: 13%;
+      width: 50px;
+    }
+
+    .step01 {
+      left: 0;
+      bottom: 10px;
+    }
+
+    .step02 {
+      left: 20%;
+      top: 0px;
+    }
+
+    .step03 {
+      right: 24%;
+      bottom: 0px;
+    }
+
+    .step04 {
+      right: 0;
+      top: 0;
+    }
+  }
+}

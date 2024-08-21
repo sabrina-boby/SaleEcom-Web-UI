@@ -17,7 +17,8 @@
         text-align: center;
         padding: 0 30px;
         font-size: calc($font-title);
-        font-family: $font-en-secondary;
+        font-family: $font-en-primary;
+        white-space: nowrap;
     }
 
     img {
@@ -69,7 +70,7 @@
     }
     p{
         color: #4d4d4f;
-        font-family: $font-en-secondary;
+        font-family: $font-en-primary;
         font-size: calc($font-readable);
         font-weight: 700;
     }
@@ -79,7 +80,11 @@
 @media (max-width:800px) {
     .heading{
         h1{
-            font-size: $font-sub-title;
+            font-size:$font-sub-title;
+            font-weight: 800px;
+            white-space: wrap;
+            margin: 0;
+            padding: 0;
         }
     }
     .itemsOfProduct-container {
