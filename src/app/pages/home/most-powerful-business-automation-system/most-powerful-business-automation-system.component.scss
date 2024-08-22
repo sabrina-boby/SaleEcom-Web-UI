@@ -9,26 +9,23 @@
 }
 
 .heading {
-    // border: 1px solid red;
-    // padding: 50px 30px 10px;
     position: relative;
-    width: 80%;
-
+    width: 100%;
     h3 {
         
         margin-top: 40px;
         color: #4d4d4f;
         text-align: center;
         // padding: 0 30px;
-        font-size: calc($font-title)-8px;
-        font-family: $font-en-primary;
+        font-size: calc($font-title)-2px;
+        font-family: $font-en-secondary;
     }
     h4{
         color: #4d4d4f;
         text-align: center;
-        font-size: calc($font-title)-8px;
-        font-family: $font-en-primary;
-        text-wrap: nowrap;
+        font-size: calc($font-title)-2px;
+        font-family: $font-en-secondary;
+        // text-wrap: nowrap;
     }
 
     img {
@@ -83,7 +80,7 @@
     }
     p{
         color: #4d4d4f;
-        font-family: $font-en-primary;
+        font-family: $font-en-secondary;
         font-size: calc($font-readable);
         font-weight: 700;
     }
@@ -91,15 +88,6 @@
 }
 
 @media (max-width:800px) {
-    .heading{
-        h1{
-            font-size:$font-sub-title;
-            font-weight: 800px;
-            white-space: wrap;
-            margin: 0;
-            padding: 0;
-        }
-    }
     .itemsOfProduct-container {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -109,25 +97,20 @@
 }
 
 
-@media (max-width:650px) {
-    .heading{
-        h1{
-            font-size: $font-readable;
-        }
-    }
-    .card {
-        .image {
-            width: 100px;
-            height: 100px;
-        }
-        p{
-            width: 100px;
-            white-space: nowrap; 
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-    }
-}
+// @media (max-width:900px) {
+//     .card {
+//         .image {
+//             width: 100px;
+//             height: 100px;
+//         }
+//         p{
+//             width: 100px;
+//             white-space: nowrap; 
+//             overflow: hidden;
+//             text-overflow: ellipsis;
+//         }
+//     }
+// }
 
 @media (max-width:450px) {
 
@@ -135,8 +118,12 @@
         width: 80%;
     }
     .heading{
-        h1{
-            font-size: $font-readable;
+        h3{
+            font-size: medium;
+        }
+        h4{
+            font-size: medium;
+            text-wrap: wrap;
         }
     }
     .itemsOfProduct-container {
