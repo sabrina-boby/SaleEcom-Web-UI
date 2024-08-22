@@ -12,6 +12,7 @@ $border-color: #e1e1e2;
   width: 100%;
   display: flex;
   justify-content: center;
+  // background: red;
 
   .form-bg {
     position: absolute;
@@ -260,19 +261,17 @@ $border-color: #e1e1e2;
 
 @media (max-width: 985px) {
   .container-header-content-wraper {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    // margin-top: 50px;
+    align-items: center;
     .header {
       .header-question-text {
         font-size: 35px;
         text-align: center;
       }
     }
-  }
-
-  .container-header-content-wraper {
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    margin-top: 50px;
   }
 
   .header-contact-text {
