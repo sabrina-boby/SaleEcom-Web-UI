@@ -1,97 +1,22 @@
 @import 'variables';
-.background {
-    background-image: url(/asset/bg.svg);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    height: 115vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-.title{
-         position: absolute;
-        top: 5%;
-
-    h2{
-        font-size: 48px;
-        color: #4d4d4f;
-        font-weight: bold;
-        // margin: 0 0 20px;
-        // z-index: 2;
-        // position: absolute;
-        // top: 5%;
-        // text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    }
-    .bgline{
-        // font-size: 48px;
-        content: "";
-        width: 130px;
-        height: 2px;
-        background-color: #4d4d4f;
-
-        margin-top: 5px;
-        transform: translateX(204%);
-        // bottom: 0;
-
-    }
-  
-}
-}
-.overlay-image {
-    position: absolute;
-    max-width: 50%;
-    height: auto;
-    top: 0;
-    left: 25%;
-    z-index: 1;
-}
-
-// .section-header h2 {
-//     left: 10px;
-//     font-size: $font-sub-title;
-//     width: 100%;
-//     margin-bottom: 60px;
-// }
-
-// .section-header h2::after {
-// display: none;
-// margin-bottom: 30px;
-// }
 
 .card-container {
     display: flex;
-    justify-content: center;
-    position: absolute;
-    // top: 170px;
+    justify-content: space-between;
     align-items: center;
-    gap: 40px;
-    width: auto;
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: center;
-    // gap: 40px;
-    z-index: 2;
-    // position: relative;
-    // padding: 20px;
-    // border: 1px solid;
+    margin:100px 0;
+    border: 1px solid red;
+ 
 }
 
 .plan-card {
     background: #ffffff;
     border-radius: 30px;
-    padding: 20px;
+    padding: 50px 40px;
     box-shadow: rgba(165, 165, 165) 0px 0px 10px 0px inset, 0px 0px 15px rgba(0, 0, 0, 0.1);
-    width: 400px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid rgb(165, 165, 165);
-    // background-color: white;
-    // border-radius: 30px;
-    // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    // padding: 20px;
-    // max-width: 500px;
-    // text-align: center;
-    // border: 1px solid red;
+
 }
 .plan-card button {
     color: white;
@@ -107,7 +32,6 @@
 .plan-card.base button {
     color: black;
     box-shadow: rgb(77, 76, 76) 0px 0px 5px 0px inset;
-    // background: rgb(20, 231, 106);
     background: linear-gradient(90deg, rgba(20, 231, 106, 1) 34%, rgba(7, 152, 134, 1) 90%);
     
 
@@ -133,8 +57,6 @@
         font-weight: bold;
         background: rgb(100, 219, 176);
         background: linear-gradient(90deg, rgba(100, 219, 176, 1) 13%, rgba(255, 205, 89, 1) 25%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
         background-clip: text;
         color: transparent;
     }
@@ -144,25 +66,12 @@
     font-size: 28px;
     background: rgb(252, 195, 92);
     background: linear-gradient(90deg, rgba(252, 195, 92, 1) 10%, rgba(255, 136, 29, 1) 19%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
     margin-top: 10px;
 
 }
-
-.plan-card.active {
-
-    transform: scale(1.1);
-    box-shadow: 0px 0px 25px rgba(200, 255, 2, 0.2) rgba(0, 0, 0, 1) 0px 0px 10px 0px inset;
-    border: 2px solid orange;
-    // border-color: linear-gradient(90deg, rgba(255,195,92,1) 51%, rgba(255,136,29,1) 100%) ;
-}
-
 .head {
-    text-align: left;
-
     h4 {
         font-size: 28px;
         margin-bottom: 10px;
@@ -187,7 +96,6 @@
 .content {
     display: flex;
     flex-direction: row;
-    gap: 10px;
     text-align: center;
     margin-top: 25px;
 
@@ -229,7 +137,7 @@
 .check-svg {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 7px;
     height: 40px;
     width: 40px;
 }
@@ -241,10 +149,7 @@
     border: 1px solid rgba(255, 136, 29, 1);
     width: 40%;
     border-radius: 30px;
-    background: rgb(252, 195, 92);
     background: linear-gradient(90deg, rgba(252, 195, 92, 1) 32%, rgba(255, 136, 29, 1) 45%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
     margin-top: 15px;
@@ -255,32 +160,27 @@
     width: 110px;
 }
 
-
-// .card h2 {
-//     margin: 0;
-//     font-size: 24px;
-// }
-
-// .card p {
-//     font-size: 16px;
-//     color: #555;
-// }
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .overlay-image {
-        max-width: 90%;
-        top: 5%;
-        left: 5%;
-    }
-
+@media only screen and (max-width: 599px) {
     .card-container {
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        gap:15px;
+    }
+    .plan-card {
+        padding: 30px 10px;
+        width: 100%;
     }
 
-    .card {
-        width: 90%;
-        max-width: 400px;
+}
+@media only screen and (max-width: 950px){
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        gap:20px;
     }
+    .plan-card {
+        width: 85%;
+        padding: 50px;
+    }
+
 }
