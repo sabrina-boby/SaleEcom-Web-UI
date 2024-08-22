@@ -1,19 +1,38 @@
 @import 'variables';
+
+// .container{
+//     position: relative;
+// }
+.choose-plan{
+
 .container{
-    height: 120vh;
+    height: 115vh;
 }
 
 .bg{
-    position: relative;
+
+}
+.bg{
+    // position: absolute;
     img{
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    // top: 0;
+    // left: 0;
+    // bottom: 0;
+    // right: 0;
+    // max-height: 1000px;
+    width: 100%;
     position: absolute;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    text-align: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+//   background: url("/asset/Main_Banner.png") no-repeat center center;
+  background-size: cover;
     }
 }
 
@@ -25,9 +44,16 @@
 }
 
 .section-header h2 {
+
     font-size: 50px;
     font-weight: 700;
     color: #333;
+    // position: relative;
+
+    font-size: calc($font-title)+10px;
+    font-family: $font-en-primary;
+    // font-weight: 700;
+    color: #4d4d4f;
     position: relative;
     position: absolute;
     top: 30px;
@@ -37,10 +63,10 @@
 .section-header h2::after {
     content: "";
     width: 100px;
-    height: 1px;
-    background-color: #333;
+    height: 2px;
+    background-color: #4d4d4f;
     position: absolute;
-    left: 50%;
+    left: 53%;
     transform: translateX(70%);
     bottom: 0;
 }
@@ -57,7 +83,7 @@
 }
 
 .plan-card {
-    background: #fff;
+    background: #ffffff;
     border-radius: 30px;
     padding: 20px;
     box-shadow: rgba(165, 165, 165) 0px 0px 10px 0px inset, 0px 0px 15px rgba(0, 0, 0, 0.1);
@@ -81,8 +107,9 @@
 .plan-card.base button {
     color: black;
     box-shadow: rgb(77, 76, 76) 0px 0px 5px 0px inset;
-    background: rgb(20, 231, 106);
+    // background: rgb(20, 231, 106);
     background: linear-gradient(90deg, rgba(20, 231, 106, 1) 34%, rgba(7, 152, 134, 1) 90%);
+    
 
 }
 
@@ -227,6 +254,7 @@
     }
     .section-header h2 {
              left: 10px;
+             font-size: $font-sub-title;
             //  width: 100%;
             //  margin-bottom: 60px;
     }
@@ -270,3 +298,4 @@
 //         border: 1px solid red;
 //     }
 // }
+}

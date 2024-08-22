@@ -58,13 +58,18 @@
             <div class="form-group">
               <div class="input-wrapper">
                 <input
-                  type="email"
+                  type="text"
                   id="email"
                   class="form-control"
-                  placeholder="Email Address"
+                  placeholder=""
                   [(ngModel)]="email"
                   name="email"
+                  required
                 />
+                <label for="email" class="floating-label"
+                  >Email Address
+                  <sup class="star-for-email-message">*</sup></label
+                >
                 <span class="close-icon" *ngIf="email" (click)="clearEmail()"
                   >&#10006;</span
                 >
@@ -77,10 +82,15 @@
                   type="tel"
                   id="phone"
                   class="form-control"
-                  placeholder="Phone Number (optional)"
+                  placeholder=""
                   [(ngModel)]="phone"
                   name="phone"
                 />
+
+                <label for="name" class="floating-label"
+                  >Phone Number (optional)</label
+                >
+
                 <span class="close-icon" *ngIf="phone" (click)="clearPhone()"
                   >&#10006;</span
                 >
@@ -93,10 +103,15 @@
                   type="text"
                   id="name"
                   class="form-control"
-                  placeholder="Your Name (optional)"
+                  placeholder=""
                   [(ngModel)]="name"
                   name="name"
                 />
+
+                <label for="name" class="floating-label"
+                  >Your Name (optional)</label
+                >
+
                 <span class="close-icon" *ngIf="name" (click)="clearName()"
                   >&#10006;</span
                 >
@@ -109,10 +124,15 @@
                   id="message"
                   class="form-control"
                   rows="4"
-                  placeholder="Message"
+                  placeholder=""
                   [(ngModel)]="message"
                   name="message"
                 ></textarea>
+
+                <label for="message" class="floating-label-message"
+                  >Message <sup class="star-for-email-message">*</sup></label
+                >
+
                 <span
                   class="close-icon"
                   *ngIf="message"
@@ -133,7 +153,7 @@
               <input type="checkbox" id="terms" class="checkbox" />
               <label for="terms"
                 >I consent to the processing of my personal data by the
-                Administrator in accordance with the Privacy Policy</label
+                Administrator in accordance Privacy Policy</label
               >
             </div>
 
