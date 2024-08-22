@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
+import {   Component, ElementRef, OnDestroy, OnInit, Renderer2 } from '@angular/core';
+import { Subscription, interval, take, tap } from 'rxjs';
 
 @Component({
   selector: 'app-business-section',
@@ -6,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './business-section.component.scss'
 })
 export class BusinessSectionComponent {
-
+  
+  
 }
