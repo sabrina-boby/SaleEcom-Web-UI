@@ -9,16 +9,23 @@
 }
 
 .heading {
-    padding: 50px 30px 10px;
     position: relative;
-
-    h1 {
+    width: 100%;
+    h3 {
+        
+        margin-top: 40px;
         color: #4d4d4f;
         text-align: center;
-        padding: 0 30px;
-        font-size: calc($font-title);
-        font-family: $font-en-primary;
-        white-space: nowrap;
+        // padding: 0 30px;
+        font-size: calc($font-title)-2px;
+        font-family: $font-en-secondary;
+    }
+    h4{
+        color: #4d4d4f;
+        text-align: center;
+        font-size: calc($font-title)-2px;
+        font-family: $font-en-secondary;
+        // text-wrap: nowrap;
     }
 
     img {
@@ -45,7 +52,11 @@
     padding: 40px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-    box-shadow: inset -10px 0 50px rgb(111, 89, 89,0.6);
+    // box-shadow: inset -10px 0 50px rgb(111, 89, 89,0.6);
+    box-shadow: inset 1px 10px 10px -10px rgba(0, 0, 0, 0.2), /* Bottom shadow */
+                inset -20px -10px 40px -10px rgba(0, 0, 0, 0.2);
+                background: rgb(242,241,241);
+                background: linear-gradient(90deg, rgba(242,241,241,1) 0%, rgba(248,248,248,1) 18%, rgba(226,226,226,1) 85%, rgba(221,221,221,1) 100%);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
@@ -63,14 +74,13 @@
         height: 150px;
         margin-bottom: 20px;
         border-radius: 50%;
-        background-image: linear-gradient(to right,aliceblue, aliceblue,rgb(239, 239, 239),rgb(240, 240, 240),rgb(230, 230, 230),rgb(220, 220, 220), rgb(210, 210, 210),white,aliceblue);
-        // background: rgb(255,255,255);
-        // background: linear-gradient(90deg, rgba(255,255,255,1) 38%, rgba(153,153,153,1) 75%, rgba(255,255,255,1) 100%);
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 9%, rgba(246,244,244,1) 28%, rgba(191,191,191,1) 79%, rgba(255,255,255,1) 100%);
         box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);    
     }
     p{
         color: #4d4d4f;
-        font-family: $font-en-primary;
+        font-family: $font-en-secondary;
         font-size: calc($font-readable);
         font-weight: 700;
     }
@@ -78,15 +88,6 @@
 }
 
 @media (max-width:800px) {
-    .heading{
-        h1{
-            font-size:$font-sub-title;
-            font-weight: 800px;
-            white-space: wrap;
-            margin: 0;
-            padding: 0;
-        }
-    }
     .itemsOfProduct-container {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -96,25 +97,20 @@
 }
 
 
-@media (max-width:650px) {
-    .heading{
-        h1{
-            font-size: $font-readable;
-        }
-    }
-    .card {
-        .image {
-            width: 100px;
-            height: 100px;
-        }
-        p{
-            width: 100px;
-            white-space: nowrap; 
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-    }
-}
+// @media (max-width:900px) {
+//     .card {
+//         .image {
+//             width: 100px;
+//             height: 100px;
+//         }
+//         p{
+//             width: 100px;
+//             white-space: nowrap; 
+//             overflow: hidden;
+//             text-overflow: ellipsis;
+//         }
+//     }
+// }
 
 @media (max-width:450px) {
 
@@ -122,8 +118,12 @@
         width: 80%;
     }
     .heading{
-        h1{
-            font-size: $font-readable;
+        h3{
+            font-size: medium;
+        }
+        h4{
+            font-size: medium;
+            text-wrap: wrap;
         }
     }
     .itemsOfProduct-container {

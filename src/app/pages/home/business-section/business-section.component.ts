@@ -1,10 +1,21 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+
+import { ViewportScroller } from '@angular/common';
+import {   Component, ElementRef, OnDestroy, OnInit, Renderer2 } from '@angular/core';
+import { Subscription, interval, take, tap } from 'rxjs';
+
+import { HostListener, } from '@angular/core';
+
 
 @Component({
   selector: 'app-business-section',
   templateUrl: './business-section.component.html',
   styleUrl: './business-section.component.scss'
 })
+
+
+  
+  
+
 export class BusinessSectionComponent implements OnInit{
   
   count01: number = 500;
@@ -64,5 +75,6 @@ export class BusinessSectionComponent implements OnInit{
       }
     }, 60); 
   }
+
 
 }
