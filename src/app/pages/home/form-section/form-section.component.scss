@@ -1,6 +1,6 @@
 @import "variables";
 
-$text-color: #424243;
+$text-color: #4d4d4f;
 $border-color: #e1e1e2;
 
 .simple-section {
@@ -33,7 +33,7 @@ $border-color: #e1e1e2;
   .header {
     display: flex;
     flex-direction: column;
-    flex-basis: 50%;
+    flex-basis: 40%;
 
     .header-contact-text {
       font-size: 12px;
@@ -45,13 +45,14 @@ $border-color: #e1e1e2;
     }
 
     .header-question-text {
-      font-size: 45px;
+      font-size: calc($font-title)+10px;
+      font-family: $font-en-primary;
       font-weight: 800;
-      line-height: 60px;
+      line-height: 70px;
       margin-top: 10px;
-      color: $text-color;
+      color: $color-black;
       .call-icon {
-        color: #0000ff;
+        color: #3434cd;
       }
     }
 
@@ -61,21 +62,21 @@ $border-color: #e1e1e2;
       margin-top: 40px;
 
       .header-number-email-contact {
-        font-size: 20px;
+        font-size:$font-title-desc;
         font-weight: 700;
         font-family: $font-en-primary;
       }
 
       .header-number-email-circle {
-        width: 10px;
-        height: 10px;
+        width: 7px;
+        height: 7px;
         border-radius: 100%;
-        background-color: #0000ff;
-        margin-top: 10px;
+        background-color: #3434cd;
+        margin-top: 9px;
       }
 
       .header-number-email-email {
-        font-size: 20px;
+        font-size:$font-title-desc;
         font-weight: 700;
         text-decoration: none;
       }
