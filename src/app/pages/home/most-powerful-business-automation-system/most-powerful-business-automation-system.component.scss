@@ -13,20 +13,20 @@
     // padding: 50px 30px 10px;
     position: relative;
     width: 100%;
-
+    // border: 1px solid red;
     h3 {
         
         margin-top: 40px;
         color: #4d4d4f;
         text-align: center;
         // padding: 0 30px;
-        font-size: calc($font-title)-8px;
+        font-size: calc($font-title)-5px;
         font-family: $font-en-primary;
     }
     h4{
         color: #4d4d4f;
         text-align: center;
-        font-size: calc($font-title)-8px;
+        font-size: calc($font-title)-5px;
         font-family: $font-en-primary;
         // text-wrap: nowrap;
     }
