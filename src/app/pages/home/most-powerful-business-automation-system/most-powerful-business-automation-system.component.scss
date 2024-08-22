@@ -55,7 +55,11 @@
     padding: 40px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-    box-shadow: inset -10px 0 50px rgb(111, 89, 89,0.6);
+    // box-shadow: inset -10px 0 50px rgb(111, 89, 89,0.6);
+    box-shadow: inset 1px 10px 10px -10px rgba(0, 0, 0, 0.2), /* Bottom shadow */
+                inset -20px -10px 40px -10px rgba(0, 0, 0, 0.2);
+                background: rgb(242,241,241);
+                background: linear-gradient(90deg, rgba(242,241,241,1) 0%, rgba(248,248,248,1) 18%, rgba(226,226,226,1) 85%, rgba(221,221,221,1) 100%);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
@@ -73,9 +77,8 @@
         height: 150px;
         margin-bottom: 20px;
         border-radius: 50%;
-        background-image: linear-gradient(to right,aliceblue, aliceblue,rgb(239, 239, 239),rgb(240, 240, 240),rgb(230, 230, 230),rgb(220, 220, 220), rgb(210, 210, 210),white,aliceblue);
-        // background: rgb(255,255,255);
-        // background: linear-gradient(90deg, rgba(255,255,255,1) 38%, rgba(153,153,153,1) 75%, rgba(255,255,255,1) 100%);
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 9%, rgba(246,244,244,1) 28%, rgba(191,191,191,1) 79%, rgba(255,255,255,1) 100%);
         box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);    
     }
     p{
