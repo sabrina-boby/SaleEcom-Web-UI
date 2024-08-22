@@ -13,17 +13,19 @@ section{
 
 .heading{
     padding: 60px;
+    position: relative;
     h1{
         color: #4d4d4f;
-        font-size: $font-title;
+        font-size: calc($font-title)+10px;
         font-family: $font-en-primary;
         margin-bottom: 6px;
     }
     .bgline{
-        width: 160px;
-        border: 1px solid black;
+        margin-top: 5px;
+        width: 207px;
+        border: 1px solid #4d4d4f;
         position: absolute;
-        left: 54%;
+        left: 61%;
     }
 }
 
@@ -32,14 +34,24 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+
     gap: 7rem;
+
+    gap: 60px;
+
 }
 
 
 .card{
     img{
+
         width: 400px;
         height: 600px;
+
+        width: 300px;
+        height: 500px;
+        border: 2px solid #4d4d4f;
+
     }
 }
 
@@ -72,15 +84,18 @@ section{
 
 @media (max-width:500px) {
     .heading{
+        text-align: center;
         padding-bottom: 60px;
         h1{
-            font-size: 1.4rem;
+            font-size: $font-sub-title;
+            white-space: nowrap;
         }
         .bgline{
-            width: 180px;
-            border: 1px solid black;
-            position: absolute;
-            left: 45%;
+            // width: 110px;
+            // border: 1px solid #4d4d4f;
+            // position: absolute;
+            // left: 64%;
+            display: none;
         }
     }
 }

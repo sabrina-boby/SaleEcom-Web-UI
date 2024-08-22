@@ -3,22 +3,23 @@
 $text-color: #424243;
 $border-color: #e1e1e2;
 
-.simple-section{
+.simple-section {
   overflow: hidden;
   padding-bottom: 150px;
 }
-.form-section{
+.form-section {
   position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
 
-  .form-bg{
+  .form-bg {
     position: absolute;
     width: 100%;
     z-index: -1;
   }
 }
+
 .container-header-content-wraper {
   position: relative;
   width: 70%;
@@ -28,23 +29,25 @@ $border-color: #e1e1e2;
   gap: 60px;
   margin-top: 100px;
 
-
   .header {
     display: flex;
     flex-direction: column;
     flex-basis: 50%;
+
     .header-contact-text {
-      font-size: 16px;
-      font-weight: bold;
+      font-size: 12px;
+      font-weight: 900;
+      font-family: $font-en-primary;
+      letter-spacing: 3px;
       color: $text-color;
       opacity: 0.5;
-
     }
 
     .header-question-text {
-      font-size: 50px;
-      font-weight: 700;
-      margin-top: 20px;
+      font-size: 45px;
+      font-weight: 800;
+      line-height: 60px;
+      margin-top: 10px;
       color: $text-color;
       .call-icon {
         color: #0000ff;
@@ -54,16 +57,17 @@ $border-color: #e1e1e2;
     .header-number-email {
       display: flex;
       gap: 15px;
-      margin-top: 30px;
+      margin-top: 40px;
 
       .header-number-email-contact {
         font-size: 20px;
-        font-weight: 500;
+        font-weight: 700;
+        font-family: $font-en-primary;
       }
 
       .header-number-email-circle {
-        width: 8px;
-        height: 8px;
+        width: 10px;
+        height: 10px;
         border-radius: 100%;
         background-color: #0000ff;
         margin-top: 10px;
@@ -72,56 +76,103 @@ $border-color: #e1e1e2;
       .header-number-email-email {
         font-size: 20px;
         font-weight: 700;
+        text-decoration: none;
       }
     }
   }
-
-  .content {
-    display: flex;
-    flex-basis: 50%;
-    margin: 0 20px;
-  }
+}
+.content {
+  display: flex;
+  flex-basis: 50%;
+  margin: 0 20px;
 }
 
 .form-group {
-  margin-bottom: 20px;
+  position: relative;
+  margin-bottom: 1.5rem;
 }
 
 .input-wrapper {
   position: relative;
-  input{
-    border: 1px solid $border-color;
-  }
-  input::placeholder{
-    font-weight: bold;
-    color: $color-secondary;
-  }
-
-  textarea::placeholder{
-    font-weight: bold;
-    color: $color-secondary;
-  }
-}
-
-.alert {
-  text-align: center;
-  color: red;
-  // margin-top: 5px;
+  display: flex;
+  align-items: center;
 }
 
 .form-control {
   width: 100%;
-  padding: 10px;
-  font-size: 16px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
   border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  outline: none;
+}
+
+.form-control:focus {
+  border-color: blue;
+}
+
+.floating-label {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 0.25rem;
+  color: #9580a9;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: 0.2s ease all;
+  pointer-events: none;
+  opacity: 0.8;
+}
+.floating-label-message {
+  position: absolute;
+  left: 1rem;
+  top: 20%;
+  transform: translateY(-50%);
+  padding: 0 0.25rem;
+  color: #9580a9;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: 0.2s ease all;
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+.form-control:focus ~ .floating-label,
+.form-control:not(:placeholder-shown) ~ .floating-label {
+  top: 0;
+  transform: translateY(-100%);
+  font-size: 0.75rem;
+  color: #9580a9;
+}
+.form-control:focus ~ .floating-label-message,
+.form-control:not(:placeholder-shown) ~ .floating-label-message {
+  top: 0;
+  transform: translateY(-100%);
+  font-size: 0.75rem;
+  color: #9580a9;
+}
+
+.input-wrapper input,
+.input-wrapper textarea {
+  border: 1px solid #f2f0f0;
+  background-color: white;
+  width: 100%;
+  padding: 17px 15px;
+  font-size: 16px;
   border-radius: 4px;
   transition: border 0.3s;
 }
 
-.form-control:focus,
-.form-control:hover {
-  border: 2px solid #0000ff;
+.input-wrapper input:focus,
+.input-wrapper textarea:focus {
+  border: 2px solid #add8e6;
   outline: none;
+}
+
+.input-wrapper input:hover,
+.input-wrapper textarea:hover {
+  border: 2px solid #0000ff;
 }
 
 .close-icon {
@@ -136,32 +187,62 @@ $border-color: #e1e1e2;
 }
 
 .close-icon:hover {
-  color: #000;
+  color: #9580a9;
 }
 
 .terms {
   display: flex;
   align-items: center;
+
+  .checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    max-width: 20px;
+    border: 2px solid #e1e8f1;
+    background-color: white;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+
+  .checkbox:checked {
+    background-color: #007bff;
+  }
+
+  .checkbox:checked::before {
+    content: "\2714";
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .checkbox:focus {
+    border-color: #0056b3;
+  }
 }
 
 .terms input[type="checkbox"] {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .send-btn {
-  // display: inline-flex;
   align-items: center;
   padding: 10px 20px;
   background-color: transparent;
-  border: 2px solid $border-color;
-  color: $color-black;
-  //border: none;
+  border: 2px solid #0000ff;
+  color: blue;
   width: 100%;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  // text-align: center;
+  font-weight: 700;
   transition: padding 0.3s;
+  opacity: 0.7;
 }
 
 .send-btn:hover {
@@ -190,6 +271,8 @@ $border-color: #e1e1e2;
   .container-header-content-wraper {
     display: flex;
     flex-direction: column;
+    width: 95%;
+    margin-top: 50px;
   }
 
   .header-contact-text {
@@ -204,6 +287,7 @@ $border-color: #e1e1e2;
 
     .header-number-email-contact {
       font-size: 15px;
+      font-weight: 900;
     }
 
     .header-number-email-circle {
@@ -214,4 +298,9 @@ $border-color: #e1e1e2;
       font-size: 15px;
     }
   }
+}
+
+.star-for-email-message {
+  color: red;
+  font-weight: 700;
 }

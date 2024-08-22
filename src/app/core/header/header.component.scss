@@ -6,22 +6,21 @@ header {
   width: 100%;
   height: $header-height;
   display: flex;
-  border-bottom: 1px solid rgb(201, 200, 200);
+  border-bottom: 1px solid rgb(218, 216, 216);
   justify-content: center;
   align-items: center;
+  position: relative;
   z-index: 100;
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
   }
 
   .logo {
     height: 100%;
     max-width: 180px;
     width: 100%;
-
     img {
       height: 100%;
       width: 100%;
@@ -33,7 +32,7 @@ header {
     display: flex;
     gap: 30px;
     justify-content: center;
-
+    align-items: center;
     p{
       display: flex;
       position: relative;
@@ -48,24 +47,37 @@ header {
     }
 .search{
   position: relative;
-
+  .slash{
+    padding: 0 8px;
+    border-radius: 5px;
+    background-color: $color-white;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    cursor: pointer;
+  }
   svg{
     height: 30px;
     width: 30px;
     position: absolute;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 2px;
+    cursor: pointer;
   }
 }
     input{
-      height: 30px;
-      border-radius: 5px;
+      height: 35px;
+      background: transparent;
+      border: 2px solid #d1d0d0;
+      border-radius: 8px;
       opacity: 0.7;
       width: 200px;
+      padding: 0 30px;
     }
     ul {
       display: flex;
       gap: 30px;
+      align-items: center;
       li {
         list-style: none;
       }
@@ -81,14 +93,16 @@ header {
           height: 25px;
           width: 25px;transition: 0.3s ease-out;
         }
-        
+
       }
     }
   }
 
   .button {
     button {
-      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      border-radius: 5px;
       border: none;
       height: 30px;
       width: 110px;
@@ -96,15 +110,21 @@ header {
       color: $color-white;
       cursor: pointer;
       font-weight: 600;
+      transition-duration: 0.4s;
+      .btn-icon{
+        width: 30px;
+        height: 30px;
+
+        img{
+          width: 100%;
+        }
+      }
     }
 
     button:hover {
-      font-weight: 600;
       // box-shadow: 0 15px 15px 0;
-      border: 1px solid black;
-      transition-duration: 0.4s;
-      background: $color-white;
-      color: $color-black;
+      //transition-duration: 0.4s;
+      background-color: #4d4a4a;
     }
   }
 
@@ -113,7 +133,7 @@ header {
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
-    
+
     span {
       width: 25px;
       height: 3px;
@@ -125,11 +145,11 @@ header {
     &.open span:nth-child(1) {
       transform: rotate(45deg) translate(6px, 5px);
     }
-    
+
     &.open span:nth-child(2) {
       opacity: 0;
     }
-    
+
     &.open span:nth-child(3) {
       transform: rotate(-45deg) translate(6px, -5px);
     }
