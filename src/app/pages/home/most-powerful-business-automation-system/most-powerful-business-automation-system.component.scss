@@ -28,6 +28,7 @@
         text-align: center;
         font-size: calc($font-title)-8px;
         font-family: $font-en-primary;
+        text-wrap: nowrap;
     }
 
     img {
