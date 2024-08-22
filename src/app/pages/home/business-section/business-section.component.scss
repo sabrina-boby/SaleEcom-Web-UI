@@ -7,8 +7,10 @@ $button-color: #2A2A2A;
 $user-bg: #eff1f1;
 
 .colorful-bg{
+  // height: 100%;
   position: relative;
   .bg-img{
+    // object-fit: cover;
     position: absolute;
     width: 100%;
     // height: 100%;
@@ -66,7 +68,8 @@ $user-bg: #eff1f1;
 
 .business-right{
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
+  flex-direction: column;
   margin-bottom: 20px;
   .all-business-texts{
     margin-top: 30px;
@@ -272,15 +275,34 @@ $user-bg: #eff1f1;
   }
 }*/
 
+@media (max-width: 1350px){
+  .colorful-bg{
+    .bg-img{
+      top: 100px;
+    }
+  }
+}
 
-@media only screen and (min-width: 600px) and (max-width: 1080px) {
 
+@media only screen and (max-width: 1180px) {
 
+  .colorful-bg{
+    .bg-img{
+      top: 100px;
+    }
+  }
 
   .business-section {
     .business-left{
       img{
         max-width: 225px;
+      }
+    }
+    .business-right{
+      // margin-bottom: 5px;
+      .all-business-texts{
+        // margin-top: 10px;
+        margin-bottom: 10px;
       }
     }
 
@@ -313,7 +335,7 @@ $user-bg: #eff1f1;
 }
 
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 830px) {
 
 
   .colorful-bg{
