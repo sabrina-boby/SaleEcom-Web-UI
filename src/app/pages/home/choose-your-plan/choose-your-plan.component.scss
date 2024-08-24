@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 @import 'variables';
 
 
@@ -23,9 +23,6 @@
     width: 400px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid rgb(165, 165, 165);
-
-=======
-@import "variables";
 
 .background {
   background: url(/asset/bg.svg) no-repeat center center;
@@ -78,7 +75,7 @@
   box-shadow: rgba(165, 165, 165) 0px 0px 10px 0px inset,
     0px 0px 15px rgba(0, 0, 0, 0.1);
   border: 1px solid rgb(165, 165, 165);
->>>>>>> bbc3e2c13f7dc632ed0f0395503a664ce1578aa1
+
 }
 .plan-card button {
   color: white;
