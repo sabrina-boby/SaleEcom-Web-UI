@@ -1,80 +1,17 @@
 @import 'variables';
-.background {
-    background-image: url(/asset/bg.svg);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    height: 115vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-.title{
-         position: absolute;
-        top: 5%;
-
-    h2{
-        font-size: 48px;
-        color: #4d4d4f;
-        font-weight: bold;
-        // margin: 0 0 20px;
-        // z-index: 2;
-        // position: absolute;
-        // top: 5%;
-        // text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    }
-    .bgline{
-        // font-size: 48px;
-        content: "";
-        width: 130px;
-        height: 2px;
-        background-color: #4d4d4f;
-
-        margin-top: 5px;
-        transform: translateX(204%);
-        // bottom: 0;
-
-    }
-  
-}
-}
-.overlay-image {
-    position: absolute;
-    max-width: 50%;
-    height: auto;
-    top: 0;
-    left: 25%;
-    z-index: 1;
-}
-
-// .section-header h2 {
-//     left: 10px;
-//     font-size: $font-sub-title;
-//     width: 100%;
-//     margin-bottom: 60px;
-// }
-
-// .section-header h2::after {
-// display: none;
-// margin-bottom: 30px;
-// }
 
 .card-container {
     display: flex;
     justify-content: center;
-    position: absolute;
-    // top: 170px;
+    // position: absolute;
+    justify-content: space-between;
     align-items: center;
     gap: 40px;
-    width: auto;
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: center;
-    // gap: 40px;
-    z-index: 2;
-    // position: relative;
-    // padding: 20px;
-    // border: 1px solid;
+    // width: auto;
+    margin:100px 0;
+    border: 1px solid red;
+ 
 }
 
 .plan-card {
@@ -85,13 +22,7 @@
     width: 400px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid rgb(165, 165, 165);
-    // background-color: white;
-    // border-radius: 30px;
-    // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    // padding: 20px;
-    // max-width: 500px;
-    // text-align: center;
-    // border: 1px solid red;
+
 }
 .plan-card button {
     color: white;
