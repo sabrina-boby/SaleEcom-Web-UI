@@ -1,5 +1,29 @@
-@import "variables";
 
+@import 'variables';
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    // position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    // width: auto;
+    margin:100px 0;
+    border: 1px solid red;
+ 
+}
+
+.plan-card {
+    background: #ffffff;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: rgba(165, 165, 165) 0px 0px 10px 0px inset, 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgb(165, 165, 165);
+}
 .background {
   background: url(/asset/bg.svg) no-repeat center center;
   background-size: cover;
@@ -51,6 +75,7 @@
   box-shadow: rgba(165, 165, 165) 0px 0px 10px 0px inset,
     0px 0px 15px rgba(0, 0, 0, 0.1);
   border: 1px solid rgb(165, 165, 165);
+
 }
 .plan-card button {
   color: white;
@@ -73,7 +98,7 @@
 }
 .plan-card.premium button {
   color: black;
-  box-shadow: rgb(77, 76, 76) 0px 0px 5px 0px inset;
+  box-shadow: rgb(77, 77, 76) 0px 0px 5px 0px inset;
   background: rgb(255, 195, 92);
   background: linear-gradient(
     90deg,
@@ -108,9 +133,13 @@
     color: transparent;
   }
 }
+.plan-card.premium.active{
+    border: 2px solid #ffc35c !important;
+
+}
 
 .plan-card.premium h4 {
-  font-size: 28px;
+  font-size: calc($font-title-desc)+10px;
   background: rgb(252, 195, 92);
   background: linear-gradient(
     90deg,
@@ -123,18 +152,21 @@
 }
 .head {
   h4 {
-    font-size: 28px;
+    font-family: $font-en-primary;
+    font-size: calc($font-title-desc)+10px;
     margin-bottom: 10px;
     color: #494949;
   }
 
   h3 {
-    font-size: 40px;
+    font-family: $font-en-primary;
+    font-size: calc($font-title)+10px;
     color: #494949;
     margin-bottom: 15px;
   }
 
   p {
+    font-family: $font-en-primary;
     font-size: 16px;
     color: #494949;
     font-weight: bold;
@@ -154,7 +186,8 @@
   gap: 20px;
   margin-top: 10px;
   p {
-    font-size: 18px;
+    font-family: $font-en-primary;
+    font-size: $font-title-desc;
     color: #494949;
     font-weight: 500;
   }
@@ -171,12 +204,14 @@
   flex-direction: row;
   align-items: center;
   h3 {
-    font-size: 40px;
+    font-family: $font-en-primary;
+    font-size: calc($font-title)+10px;
     color: #494949;
     margin-bottom: 20px;
   }
   p {
-    font-size: 18px;
+    font-family: $font-en-primary;
+    font-size: $font-title-desc;
     color: #494949;
   }
 }
@@ -184,7 +219,7 @@
 .check-svg {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 12px;
   padding-top: 5px;
   img {
     height: 30px;
@@ -196,7 +231,8 @@
   text-align: center;
   transform: translate(150%);
   padding: 2px 0px;
-  font-size: 16px;
+  font-family: $font-en-primary;
+  font-size: $font-title-desc;
   border: 1px solid rgba(255, 136, 29, 1);
   width: 40%;
   border-radius: 30px;
