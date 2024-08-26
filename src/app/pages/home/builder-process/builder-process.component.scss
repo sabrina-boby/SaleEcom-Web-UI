@@ -112,7 +112,6 @@
   justify-content: center;
   align-items: center;
 
-  transition: 3s all ease; /* Smooth rotation transition */
 }
 
 .start-build {
@@ -133,7 +132,7 @@
 
 .step:hover .border {
   transform: rotate(180deg); /* Rotates the border 90 degrees */
-  transition: 3s all ease;
+  transition: 3s transform ease;
 }
 
 .border-colour1 {
