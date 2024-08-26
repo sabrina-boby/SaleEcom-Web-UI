@@ -66,10 +66,13 @@
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     margin: 20px;
+    height: 216px;
+    // background: red;
     .image {
+        // border:1px solid blue;
         width: 150px;
         height: 150px;
         margin-bottom: 20px;
@@ -92,27 +95,17 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
     .card {
+        height: 207px;
         padding: 10px;
+        .image {
+            height: 100px;
+            width: 100px;
+        }
     }
 }
 
 
-// @media (max-width:900px) {
-//     .card {
-//         .image {
-//             width: 100px;
-//             height: 100px;
-//         }
-//         p{
-//             width: 100px;
-//             white-space: nowrap; 
-//             overflow: hidden;
-//             text-overflow: ellipsis;
-//         }
-//     }
-// }
-
-@media (max-width:450px) {
+@media only screen and (max-width: 599px) {
 
     .image-banner{
         width: 80%;

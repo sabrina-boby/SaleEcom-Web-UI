@@ -77,13 +77,12 @@ $button-color: #2A2A2A;
   width: 100%;
   margin-top: 48px;
   margin-bottom: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
   align-items: center;
   gap: 20px;
   .tech-box-all{
+    // background: red;
     max-width: 350px;
     height: 220px;
     border-radius: 12px;
@@ -133,28 +132,8 @@ $button-color: #2A2A2A;
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1080px) {
-  .bg-line{
-    display: none;
 
-  }
-  .tool-section-header{
-    h2{
-      font-size: $font-title-sm;
-    }
-
-  }
-  .tool-section{
-    .powered-by-btn{
-      width: 155px;
-    }
-  }
-
-}
 @media only screen and (max-width: 599px) {
-
-
-
   .bg-line{
     display: none;
   }
@@ -174,11 +153,15 @@ $button-color: #2A2A2A;
       display: none;
     }
   }
+  .tech-stack {
+
+    grid-template-columns: repeat(1,1fr);
+  
+  }
   .connections{
-    svg{
+    .svg-connect{
       display: none;
     }
-
   }
   .powered-by-btn{
     display: none;
