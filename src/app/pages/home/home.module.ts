@@ -17,6 +17,7 @@ import { ChooseYourPlanComponent } from './choose-your-plan/choose-your-plan.com
 import { SingleFaqComponent } from '../../shared/components/single-faq/single-faq.component';
 import { FormSectionComponent } from './form-section/form-section.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SettingsDetailsComponent } from './settings-details/settings-details.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ToolsSectionComponent,
     BusinessSectionComponent,
     FormSectionComponent,
+    
   ],
   imports: [
     CommonModule,
@@ -45,7 +47,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ChooseYourOwnTemplateComponent,
     SingleFaqComponent,
     FormsModule,
-    ReactiveFormsModule  
-  ],
+    ReactiveFormsModule,
+    SettingsDetailsComponent
+],
 })
 export class HomeModule {}
