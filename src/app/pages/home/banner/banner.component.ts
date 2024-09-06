@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class BannerComponent {
 
+  tabs: string[] = ['Team', 'Security', 'Referrals', 'Feature Preview'];
+  selectedTab: number = 0;
+
+  selectTab(index: number): void {
+    this.selectedTab = index;
+  }
 }
